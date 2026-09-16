@@ -8,3 +8,6 @@ node_modules/
 *.aab
 *.apk
 .DS_Store
+ml/data/
+ml/output/
+__pycache__/

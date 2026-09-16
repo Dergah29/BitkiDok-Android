@@ -27,3 +27,7 @@ Bu repo hazırda Node.js veb prototipidir, Android APK/AAB deyil. GitHub Actions
 ## Offline qulluq bazası – ilkin mərhələ
 
 `public/offline.js` 8 ev bitkisi üçün növ seçimi, torpaq/işıq/belirti qaydaları və EN/DE/RU/TR mətnlərini saxlayır. Scan səhifəsinin aşağısındakı bələdçi API açarı olmadan işləyir. Bu, şəkil tanıma modeli deyil: istifadəçi əlamətləri özü seçir, nəticə mümkün səbəbdir. Zəhərli/kimyəvi vasitə və təsdiqlənmiş xəstəlik diaqnozu verilmir. Hər növ və problem üçün lisenziyası uyğun şəkillər, ayrıca təsdiq edilmiş etiketlər və real foto testləri əldə olunmadan bu məlumatla şəkil modelini öyrətmək olmaz.
+
+## Image recognition training scaffold
+
+`ml/` contains a licensed-photo manifest validator and an experimental TensorFlow MobileNetV2 trainer that exports a LiteRT/TFLite species model. No training images or model weights are present. The scanner still uses Kindwise when configured; without a trained and independently evaluated model it must not claim to recognize species or diseases offline. See `ml/README.md`.

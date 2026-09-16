@@ -1,0 +1,30 @@
+name: Train experimental houseplant health model
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/**'
+      - '.github/workflows/train-model.yml'
+permissions:
+  contents: read
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r ml/requirements.txt
+      - name: Prepare original CC BY dataset
+        run: python ml/prepare_mendeley.py ml/data
+      - name: Validate provenance and classes
+        run: python ml/validate_dataset.py ml/data
+      - name: Train experimental model
+        run: python ml/train.py ml/data ml/output
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bitkidok-experimental-model
+          path: ml/output/
+          retention-days: 7

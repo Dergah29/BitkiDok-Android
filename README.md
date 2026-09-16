@@ -23,3 +23,7 @@ The plant list is stored in browser localStorage. Clearing browser data removes 
 ## GitHub və Google Play vəziyyəti
 
 Bu repo hazırda Node.js veb prototipidir, Android APK/AAB deyil. GitHub Actions yalnız sintaksis və serverin açılmasını yoxlayır; Android paketi yaratmır. Google Play-ə göndərməzdən əvvəl Android tətbiqi, HTTPS ilə işləyən backend, məxfi açarın serverdə saxlanması, canlı şəkil analizi sınağı, ödəniş inteqrasiyası, məxfilik məlumatları və buraxılış paketi hazırlanmalıdır. `PLANT_ID_API_KEY` heç vaxt repoya və mobil APK-yə əlavə edilməməlidir.
+
+## Offline qulluq bazası – ilkin mərhələ
+
+`public/offline.js` 8 ev bitkisi üçün növ seçimi, torpaq/işıq/belirti qaydaları və EN/DE/RU/TR mətnlərini saxlayır. Scan səhifəsinin aşağısındakı bələdçi API açarı olmadan işləyir. Bu, şəkil tanıma modeli deyil: istifadəçi əlamətləri özü seçir, nəticə mümkün səbəbdir. Zəhərli/kimyəvi vasitə və təsdiqlənmiş xəstəlik diaqnozu verilmir. Hər növ və problem üçün lisenziyası uyğun şəkillər, ayrıca təsdiq edilmiş etiketlər və real foto testləri əldə olunmadan bu məlumatla şəkil modelini öyrətmək olmaz.

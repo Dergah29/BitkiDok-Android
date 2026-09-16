@@ -1,0 +1,21 @@
+name: Check web prototype
+on:
+  push:
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check server.mjs
+      - run: node --check public/app.js
+      - name: Smoke test
+        run: |
+          node server.mjs &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in 1 2 3 4 5; do curl -fsS http://127.0.0.1:3000/api/status && break || sleep 1; done
+          curl -fsS http://127.0.0.1:3000/ >/dev/null

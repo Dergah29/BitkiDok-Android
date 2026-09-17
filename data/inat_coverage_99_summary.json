@@ -1,0 +1,710 @@
+{
+  "as_of_utc": "2026-09-17T16:49:25.971989+00:00",
+  "run_url": "https://github.com/Dergah29/BitkiDok-Android/actions/runs/35248530891",
+  "artifact_name": "inat-coverage-99-candidates",
+  "source": "iNaturalist public API v1",
+  "source_terms": "https://www.inaturalist.org/pages/terms",
+  "gap_species_checked": 99,
+  "species_with_metadata_candidates": 46,
+  "metadata_candidate_photos": 428,
+  "license_cc_by": 326,
+  "license_cc0": 102,
+  "query_errors": 0,
+  "potential_gap_species_reaching_12_if_all_observations_are_valid": 17,
+  "note": "Only metadata candidates. Photo URLs, bytes, taxonomy, per-image licenses and overlap with GBIF must be rechecked before training. No model improvement or extra trained class yet.",
+  "results": [
+    {
+      "species": "Kalanchoe blossfeldiana",
+      "gbif_usable_photos": 10,
+      "candidate_photos": 23,
+      "candidate_observations": 11,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Rhaphidophora tetrasperma",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Scindapsus treubii",
+      "gbif_usable_photos": 1,
+      "candidate_photos": 4,
+      "candidate_observations": 1,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Philodendron bipinnatifidum",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Philodendron melanochrysum",
+      "gbif_usable_photos": 3,
+      "candidate_photos": 4,
+      "candidate_observations": 3,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Philodendron micans",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Philodendron billietiae",
+      "gbif_usable_photos": 6,
+      "candidate_photos": 8,
+      "candidate_observations": 6,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Philodendron hastatum",
+      "gbif_usable_photos": 5,
+      "candidate_photos": 9,
+      "candidate_observations": 5,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Philodendron domesticum",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Philodendron xanadu",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Anthurium crystallinum",
+      "gbif_usable_photos": 4,
+      "candidate_photos": 5,
+      "candidate_observations": 4,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Anthurium clarinervium",
+      "gbif_usable_photos": 2,
+      "candidate_photos": 2,
+      "candidate_observations": 2,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Anthurium magnificum",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Anthurium veitchii",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Anthurium hookeri",
+      "gbif_usable_photos": 7,
+      "candidate_photos": 9,
+      "candidate_observations": 7,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Spathiphyllum floribundum",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Zamioculcas zamiifolia",
+      "gbif_usable_photos": 6,
+      "candidate_photos": 14,
+      "candidate_observations": 6,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Alocasia amazonica",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Alocasia zebrina",
+      "gbif_usable_photos": 2,
+      "candidate_photos": 4,
+      "candidate_observations": 2,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Alocasia baginda",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Alocasia cuprea",
+      "gbif_usable_photos": 1,
+      "candidate_photos": 3,
+      "candidate_observations": 1,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Alocasia reginula",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Syngonium erythrophyllum",
+      "gbif_usable_photos": 1,
+      "candidate_photos": 4,
+      "candidate_observations": 1,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Aglaonema modestum",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 5,
+      "candidate_observations": 3,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Aglaonema pictum",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Dieffenbachia amoena",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Dracaena trifasciata",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Dracaena marginata",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Dracaena angolensis",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Dracaena surculosa",
+      "gbif_usable_photos": 6,
+      "candidate_photos": 11,
+      "candidate_observations": 6,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Dracaena braunii",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Dracaena elliptica",
+      "gbif_usable_photos": 1,
+      "candidate_photos": 2,
+      "candidate_observations": 1,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Chlorophytum orchidastrum",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Asparagus plumosus",
+      "gbif_usable_photos": 1,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Aspidistra lurida",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Haworthiopsis attenuata",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Haworthiopsis fasciata",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Gasteria bicolor",
+      "gbif_usable_photos": 8,
+      "candidate_photos": 9,
+      "candidate_observations": 7,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Gasteria verrucosa",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Aloe juvenna",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Aloe aristata",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Aloe brevifolia",
+      "gbif_usable_photos": 3,
+      "candidate_photos": 1,
+      "candidate_observations": 1,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Kalanchoe tomentosa",
+      "gbif_usable_photos": 7,
+      "candidate_photos": 11,
+      "candidate_observations": 7,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Echeveria elegans",
+      "gbif_usable_photos": 2,
+      "candidate_photos": 8,
+      "candidate_observations": 2,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Echeveria agavoides",
+      "gbif_usable_photos": 3,
+      "candidate_photos": 22,
+      "candidate_observations": 17,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Echeveria pulidonis",
+      "gbif_usable_photos": 1,
+      "candidate_photos": 4,
+      "candidate_observations": 1,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Echeveria lilacina",
+      "gbif_usable_photos": 1,
+      "candidate_photos": 2,
+      "candidate_observations": 1,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Sedum morganianum",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Sedum rubrotinctum",
+      "gbif_usable_photos": 4,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Sedum adolphi",
+      "gbif_usable_photos": 2,
+      "candidate_photos": 12,
+      "candidate_observations": 3,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Graptopetalum paraguayense",
+      "gbif_usable_photos": 3,
+      "candidate_photos": 6,
+      "candidate_observations": 3,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Pachyphytum oviferum",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Senecio rowleyanus",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Senecio radicans",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Curio herreanus",
+      "gbif_usable_photos": 3,
+      "candidate_photos": 8,
+      "candidate_observations": 3,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Ceropegia woodii",
+      "gbif_usable_photos": 2,
+      "candidate_photos": 7,
+      "candidate_observations": 2,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Lithops lesliei",
+      "gbif_usable_photos": 2,
+      "candidate_photos": 3,
+      "candidate_observations": 2,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Schlumbergera buckleyi",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Schlumbergera russeliana",
+      "gbif_usable_photos": 1,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Rhipsalis pilocarpa",
+      "gbif_usable_photos": 8,
+      "candidate_photos": 14,
+      "candidate_observations": 8,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Hatiora salicornioides",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Epiphyllum anguliger",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Disocactus ackermannii",
+      "gbif_usable_photos": 3,
+      "candidate_photos": 6,
+      "candidate_observations": 3,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Disocactus flagelliformis",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Mammillaria elongata",
+      "gbif_usable_photos": 7,
+      "candidate_photos": 9,
+      "candidate_observations": 8,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Mammillaria hahniana",
+      "gbif_usable_photos": 2,
+      "candidate_photos": 5,
+      "candidate_observations": 3,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Mammillaria gracilis",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Gymnocalycium mihanovichii",
+      "gbif_usable_photos": 1,
+      "candidate_photos": 4,
+      "candidate_observations": 1,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Echinopsis chamaecereus",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Echinocactus grusonii",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Hylocereus undatus",
+      "gbif_usable_photos": 1,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Parodia magnifica",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Parodia leninghausii",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Rebutia minuscula",
+      "gbif_usable_photos": 10,
+      "candidate_photos": 46,
+      "candidate_observations": 10,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Ficus lyrata",
+      "gbif_usable_photos": 6,
+      "candidate_photos": 13,
+      "candidate_observations": 7,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Ficus deltoidea",
+      "gbif_usable_photos": 4,
+      "candidate_photos": 8,
+      "candidate_observations": 5,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Schefflera arboricola",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Euphorbia trigona",
+      "gbif_usable_photos": 9,
+      "candidate_photos": 9,
+      "candidate_observations": 8,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Peperomia argyreia",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Peperomia caperata",
+      "gbif_usable_photos": 1,
+      "candidate_photos": 1,
+      "candidate_observations": 1,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Peperomia polybotrya",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Peperomia prostrata",
+      "gbif_usable_photos": 1,
+      "candidate_photos": 1,
+      "candidate_observations": 1,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Pilea peperomioides",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Begonia rex",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Begonia corallina",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Begonia masoniana",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Begonia semperflorens",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Saintpaulia ionantha",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Streptocarpus saxorum",
+      "gbif_usable_photos": 1,
+      "candidate_photos": 3,
+      "candidate_observations": 1,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Sinningia speciosa",
+      "gbif_usable_photos": 2,
+      "candidate_photos": 7,
+      "candidate_observations": 2,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Jasminum sambac",
+      "gbif_usable_photos": 11,
+      "candidate_photos": 17,
+      "candidate_observations": 12,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Hoya pubicalyx",
+      "gbif_usable_photos": 5,
+      "candidate_photos": 7,
+      "candidate_observations": 5,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Hoya kerrii",
+      "gbif_usable_photos": 10,
+      "candidate_photos": 23,
+      "candidate_observations": 10,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Hoya linearis",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Hoya compacta",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Hippeastrum vittatum",
+      "gbif_usable_photos": 1,
+      "candidate_photos": 9,
+      "candidate_observations": 1,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Chamaedorea elegans",
+      "gbif_usable_photos": 11,
+      "candidate_photos": 23,
+      "candidate_observations": 12,
+      "status": "metadata_candidates_only"
+    },
+    {
+      "species": "Dypsis lutescens",
+      "gbif_usable_photos": 0,
+      "candidate_photos": 0,
+      "candidate_observations": 0,
+      "status": "no_unambiguous_exact_species_match"
+    },
+    {
+      "species": "Rhapis excelsa",
+      "gbif_usable_photos": 11,
+      "candidate_photos": 23,
+      "candidate_observations": 11,
+      "status": "metadata_candidates_only"
+    }
+  ]
+}

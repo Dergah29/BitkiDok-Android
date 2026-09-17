@@ -1,0 +1,26 @@
+name: Build iNaturalist visual review sheets
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/make_inat_review_sheets.py'
+      - '.github/workflows/review-inat-sheets.yml'
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pillow==11.3.0
+      - run: python ml/make_inat_review_sheets.py data/inat_photo_candidates_99.json data/inat_download_validation_99.json /tmp/bitkidok-review
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: inat-review-sheets
+          path: /tmp/bitkidok-review
+          if-no-files-found: warn

@@ -156,15 +156,15 @@ public final class MainActivity extends Activity {
             java.util.Arrays.sort(order, (left, right) -> Float.compare(scores[0][right], scores[0][left]));
             StringBuilder choices = new StringBuilder();
             for (int i = 0; i < Math.min(3, order.length); i++) {
-                choices.append("\\n").append(i + 1).append(". ")
+                choices.append("\n").append(i + 1).append(". ")
                        .append(labels.getString(order[i]).replace('_', ' '));
             }
             if (confidence < 0.45f) {
-                return "Bitki növünü etibarlı müəyyən edə bilmədim. Daha aydın şəkil çək.\\nTəklif edilən 3 növ:" + choices;
+                return "Bitki növünü etibarlı müəyyən edə bilmədim. Daha aydın şəkil çək.\nTəklif edilən 3 növ:" + choices;
             }
             return "Mümkün bitki növləri:" + choices
-                + "\\n\\nİlk seçim üçün model göstəricisi: " + String.format(Locale.US, "%.0f%%", confidence * 100)
-                + "\\nBu göstərici düzgün tanınma ehtimalı deyil. Model yalnız 21 növ arasında seçim edir və naməlum bitkini də bunlardan birinə aid edə bilər. Xəstəlik nəticəsi bu ekranda verilmir.";
+                + "\n\nİlk seçim üçün model göstəricisi: " + String.format(Locale.US, "%.0f%%", confidence * 100)
+                + "\nBu göstərici düzgün tanınma ehtimalı deyil. Model yalnız 21 növ arasında seçim edir və naməlum bitkini də bunlardan birinə aid edə bilər. Xəstəlik nəticəsi bu ekranda verilmir.";
         }
     }
 

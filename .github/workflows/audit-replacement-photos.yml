@@ -1,0 +1,25 @@
+name: Audit replacement photo licenses
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/audit_replacement_photos.py'
+      - '.github/workflows/audit-replacement-photos.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python ml/audit_replacement_photos.py data/replacement_taxa_candidates_11.json /tmp/replacement_photo_candidates.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: replacement-photo-candidates
+          path: /tmp/replacement_photo_candidates.json
+          if-no-files-found: warn

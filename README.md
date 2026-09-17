@@ -51,3 +51,9 @@ Bu repo hazırda Node.js veb prototipidir, Android APK/AAB deyil. GitHub Actions
 ### 200 ev bitkisi kataloqu
 
 [`data/houseplants_200.json`](data/houseplants_200.json) faylında 200 ayrı botaniki qeyd və GBIF taxon açarı var. Siyahı 245 namizəddən [GBIF ad yoxlaması](https://github.com/Dergah29/BitkiDok-Android/actions/runs/35206411921) ilə seçilib; 21 qeyd hazırkı eksperimental foto modelinə daxildir, 179 qeyd hələ yalnız kataloq namizədidir. Növlərin evdə saxlanması, satış adları, qulluq məlumatları və şəkil tanıma keyfiyyəti ayrıca redaktə və sınaq tələb edir. Kataloq əlavə edilməsi APK-nin 200 növü fotodan tanıması demək deyil.
+
+### 200 bitki üçün qulluq kartları (ilkin redaktə)
+
+[`data/houseplants_200_details_az.json`](data/houseplants_200_details_az.json) kataloqdakı 200 taxon açarının hər biri üçün Azərbaycan dilində işıq, suvarma, torpaq və otaq şəraiti üzrə **qrup səviyyəli ilkin bələdçi** saxlayır. 14 qulluq profili var; bunlar növ üzrə təsdiqlənmiş 200 fərdi qulluq təlimatı deyil. Suvarma sabit gün sayına deyil, torpağın vəziyyətinə əsaslanır. Ümumi metod üçün [RHS houseplant guide](https://www.rhs.org.uk/plants/types/houseplants/growing-guide) və [NC State Cooperative Extension](https://caldwell.ces.ncsu.edu/2021/01/indoor-plant-care-101/) göstərilib. Növə xas redaktə və ekspert yoxlaması yayım öncəsi lazımdır.
+
+Mənşə/habitat sahələrində yalnız *Monstera deliciosa* üçün [Kew POWO](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:87478-1) əsasında təsdiqli məlumat var. Qalan 199 qeyddə mənşə və təbii yaşayış yeri `null` və `pending_species_verification` kimi saxlanır: ad və ya GBIF müşahidələrinə əsaslanıb ölkə təxmin edilmir. Bu məlumat faylı hələ Android ekranında göstərilmir; tətbiqə qoşulması və dörd dilə tərcüməsi növbəti işdir. 200 qeydin yalnız 21-i eksperimental foto modelində var.

@@ -1,0 +1,161 @@
+{
+  "source_run": "https://github.com/Dergah29/BitkiDok-Android/actions/runs/35268209829",
+  "resolved_accepted_keys": 197,
+  "distinct_accepted_keys_by_rank": {
+    "SPECIES": 193,
+    "VARIETY": 2,
+    "SUBSPECIES": 2
+  },
+  "synonym_accepted_targets": {
+    "2768686": {
+      "canonicalName": "Asparagus setaceus",
+      "scientificName": "Asparagus setaceus (Kunth) Jessop",
+      "rank": "SPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "2778570": {
+      "canonicalName": "Gasteria carinata verrucosa",
+      "scientificName": "Gasteria carinata var. verrucosa (Mill.) van Jaarsv.",
+      "rank": "VARIETY",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "2778690": {
+      "canonicalName": "Gasteria obliqua",
+      "scientificName": "Gasteria obliqua (Aiton) Duval",
+      "rank": "SPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "3107396": {
+      "canonicalName": "Curio radicans",
+      "scientificName": "Curio radicans (L.) P.V.Heath",
+      "rank": "SPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "3944596": {
+      "canonicalName": "Chamaecereus silvestrii",
+      "scientificName": "Chamaecereus silvestrii (Speg.) Britton & Rose",
+      "rank": "SPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "5532250": {
+      "canonicalName": "Alocasia mortfontanensis",
+      "scientificName": "Alocasia ×mortfontanensis André",
+      "rank": "SPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "5623188": {
+      "canonicalName": "Mammillaria vetula gracilis",
+      "scientificName": "Mammillaria vetula subsp. gracilis (Pfeiff.) D.R.Hunt",
+      "rank": "SUBSPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "7228286": {
+      "canonicalName": "Philodendron hederaceum hederaceum",
+      "scientificName": "Philodendron hederaceum var. hederaceum",
+      "rank": "VARIETY",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "7283331": {
+      "canonicalName": "Aporocactus flagelliformis",
+      "scientificName": "Aporocactus flagelliformis (L.) Lem.",
+      "rank": "SPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "7303475": {
+      "canonicalName": "Begonia maculata",
+      "scientificName": "Begonia maculata Raddi",
+      "rank": "SPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "8658195": {
+      "canonicalName": "Hoya carnosa",
+      "scientificName": "Hoya carnosa (L.fil.) R.Br.",
+      "rank": "SPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "9505138": {
+      "canonicalName": "Aristaloe aristata",
+      "scientificName": "Aristaloe aristata (Haw.) Boatwr. & J.C.Manning",
+      "rank": "SPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "9669385": {
+      "canonicalName": "Thaumatophyllum xanadu",
+      "scientificName": "Thaumatophyllum xanadu (Croat, J.Boos & Mayo) Sakur., Calazans & Mayo",
+      "rank": "SPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "10334868": {
+      "canonicalName": "Selenicereus undatus",
+      "scientificName": "Selenicereus undatus (Haw.) D.R.Hunt",
+      "rank": "SPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "10771315": {
+      "canonicalName": "Disocactus anguliger",
+      "scientificName": "Disocactus anguliger (Lem.) M.Á.Cruz & S.Arias",
+      "rank": "SPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "10796900": {
+      "canonicalName": "Streptocarpus ionanthus ionanthus",
+      "scientificName": "Streptocarpus ionanthus subsp. ionanthus",
+      "rank": "SUBSPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    },
+    "10911827": {
+      "canonicalName": "Kroenleinia grusonii",
+      "scientificName": "Kroenleinia grusonii (Hildm.) Lodé",
+      "rank": "SPECIES",
+      "taxonomicStatus": "ACCEPTED",
+      "acceptedKey": null
+    }
+  },
+  "non_species_accepted_targets": [
+    {
+      "accepted_key": 7228286,
+      "rank": "VARIETY",
+      "catalog_names": [
+        "Philodendron micans"
+      ]
+    },
+    {
+      "accepted_key": 2778570,
+      "rank": "VARIETY",
+      "catalog_names": [
+        "Gasteria verrucosa"
+      ]
+    },
+    {
+      "accepted_key": 5623188,
+      "rank": "SUBSPECIES",
+      "catalog_names": [
+        "Mammillaria gracilis"
+      ]
+    },
+    {
+      "accepted_key": 10796900,
+      "rank": "SUBSPECIES",
+      "catalog_names": [
+        "Saintpaulia ionantha"
+      ]
+    }
+  ],
+  "warning": "Taxonomy key counts are not model class counts. Botanical and photo-level verification remains necessary."
+}

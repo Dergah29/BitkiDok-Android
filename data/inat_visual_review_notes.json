@@ -1,0 +1,41 @@
+{
+  "review_run": "https://github.com/Dergah29/BitkiDok-Android/actions/runs/35266596327",
+  "reviewed_utc": "2026-09-17",
+  "review_scope": "Four first accessible medium photos for each of the 15 species that may reach the 12-image threshold; contact sheets are in inat-review-sheets artifact.",
+  "sample_images": 60,
+  "species_sampled": 15,
+  "download_errors_before_four_per_species": 8,
+  "reviewer_method": "Visual first-pass by an AI assistant; not expert botanical verification.",
+  "examples_requiring_review": [
+    {
+      "species": "Rhipsalis pilocarpa",
+      "photo_id": 413790153,
+      "observation_id": 232875046,
+      "flag": "Plant of interest very small within tree/background; poor framing for classification."
+    },
+    {
+      "species": "Mammillaria elongata",
+      "photo_id": 663077501,
+      "observation_id": 363255818,
+      "flag": "Plant of interest occupies only a small portion of a wide outdoor photo."
+    },
+    {
+      "species": "Ficus lyrata",
+      "photo_id": 348073320,
+      "observation_id": 197600255,
+      "flag": "Leaf appearance in sample visually uncertain; verify identification with a botanist before use."
+    },
+    {
+      "species": "Kalanchoe blossfeldiana",
+      "photo_id": 524302591,
+      "observation_id": 291403684,
+      "flag": "No diagnostic flower detail visible in sample; check species identification before use."
+    }
+  ],
+  "data_quality_observations": [
+    "Many candidates are outdoor or wild-habitat photos; consumer use case is close phone photos of potted houseplants, so validation must account for the domain shift.",
+    "Separate iNaturalist observation IDs can show the same individual or photographer; train/validation should be grouped by source contributor and individual plant when feasible.",
+    "Photographic access and CC0/CC-BY metadata do not prove correct species labels."
+  ],
+  "decision": "None of these 60 samples or the 189 decoded photos are promoted automatically to labeled training data. Trained classes remain 101; independent phone-photo accuracy unmeasured."
+}

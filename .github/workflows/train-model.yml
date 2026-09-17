@@ -3,7 +3,10 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'ml/**'
+      - 'ml/prepare_mendeley.py'
+      - 'ml/validate_dataset.py'
+      - 'ml/train.py'
+      - 'ml/requirements.txt'
       - '.github/workflows/train-model.yml'
 permissions:
   contents: read

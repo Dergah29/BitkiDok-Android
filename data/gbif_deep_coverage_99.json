@@ -1,0 +1,504 @@
+{
+  "run_url": "https://github.com/Dergah29/BitkiDok-Android/actions/runs/35226993243",
+  "species_checked": 99,
+  "with_additional_candidates": 49,
+  "total_candidate_urls": 407,
+  "note": "Additional page metadata only; possible overlap with earlier pages, broken links, duplicates, and wrong labels. Do not add counts directly to usable images.",
+  "species": [
+    {
+      "candidate_image_urls": 21,
+      "observation_count": 61,
+      "species": "Kalanchoe blossfeldiana"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 6,
+      "species": "Rhaphidophora tetrasperma"
+    },
+    {
+      "candidate_image_urls": 4,
+      "observation_count": 10,
+      "species": "Scindapsus treubii"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 5,
+      "species": "Philodendron bipinnatifidum"
+    },
+    {
+      "candidate_image_urls": 4,
+      "observation_count": 10,
+      "species": "Philodendron melanochrysum"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Philodendron micans"
+    },
+    {
+      "candidate_image_urls": 8,
+      "observation_count": 71,
+      "species": "Philodendron billietiae"
+    },
+    {
+      "candidate_image_urls": 9,
+      "observation_count": 33,
+      "species": "Philodendron hastatum"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Philodendron domesticum"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 1,
+      "species": "Philodendron xanadu"
+    },
+    {
+      "candidate_image_urls": 5,
+      "observation_count": 35,
+      "species": "Anthurium crystallinum"
+    },
+    {
+      "candidate_image_urls": 2,
+      "observation_count": 17,
+      "species": "Anthurium clarinervium"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 11,
+      "species": "Anthurium magnificum"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 6,
+      "species": "Anthurium veitchii"
+    },
+    {
+      "candidate_image_urls": 9,
+      "observation_count": 48,
+      "species": "Anthurium hookeri"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Spathiphyllum floribundum"
+    },
+    {
+      "candidate_image_urls": 14,
+      "observation_count": 77,
+      "species": "Zamioculcas zamiifolia"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Alocasia amazonica"
+    },
+    {
+      "candidate_image_urls": 4,
+      "observation_count": 17,
+      "species": "Alocasia zebrina"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 2,
+      "species": "Alocasia baginda"
+    },
+    {
+      "candidate_image_urls": 3,
+      "observation_count": 18,
+      "species": "Alocasia cuprea"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 1,
+      "species": "Alocasia reginula"
+    },
+    {
+      "candidate_image_urls": 4,
+      "observation_count": 2,
+      "species": "Syngonium erythrophyllum"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 6,
+      "species": "Aglaonema modestum"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 2,
+      "species": "Aglaonema pictum"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Dieffenbachia amoena"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 2142,
+      "species": "Dracaena trifasciata"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Dracaena marginata"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 209,
+      "species": "Dracaena angolensis"
+    },
+    {
+      "candidate_image_urls": 11,
+      "observation_count": 126,
+      "species": "Dracaena surculosa"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 9,
+      "species": "Dracaena braunii"
+    },
+    {
+      "candidate_image_urls": 2,
+      "observation_count": 10,
+      "species": "Dracaena elliptica"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 2,
+      "species": "Chlorophytum orchidastrum"
+    },
+    {
+      "candidate_image_urls": 1,
+      "observation_count": 10,
+      "species": "Asparagus plumosus"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Aspidistra lurida"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 10,
+      "species": "Haworthiopsis attenuata"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 134,
+      "species": "Haworthiopsis fasciata"
+    },
+    {
+      "candidate_image_urls": 10,
+      "observation_count": 140,
+      "species": "Gasteria bicolor"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Gasteria verrucosa"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 4,
+      "species": "Aloe juvenna"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 3,
+      "species": "Aloe aristata"
+    },
+    {
+      "candidate_image_urls": 3,
+      "observation_count": 47,
+      "species": "Aloe brevifolia"
+    },
+    {
+      "candidate_image_urls": 11,
+      "observation_count": 40,
+      "species": "Kalanchoe tomentosa"
+    },
+    {
+      "candidate_image_urls": 8,
+      "observation_count": 64,
+      "species": "Echeveria elegans"
+    },
+    {
+      "candidate_image_urls": 4,
+      "observation_count": 167,
+      "species": "Echeveria agavoides"
+    },
+    {
+      "candidate_image_urls": 4,
+      "observation_count": 1,
+      "species": "Echeveria pulidonis"
+    },
+    {
+      "candidate_image_urls": 2,
+      "observation_count": 7,
+      "species": "Echeveria lilacina"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 3,
+      "species": "Sedum morganianum"
+    },
+    {
+      "candidate_image_urls": 5,
+      "observation_count": 32,
+      "species": "Sedum rubrotinctum"
+    },
+    {
+      "candidate_image_urls": 10,
+      "observation_count": 14,
+      "species": "Sedum adolphi"
+    },
+    {
+      "candidate_image_urls": 6,
+      "observation_count": 38,
+      "species": "Graptopetalum paraguayense"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 11,
+      "species": "Pachyphytum oviferum"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Senecio rowleyanus"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Senecio radicans"
+    },
+    {
+      "candidate_image_urls": 8,
+      "observation_count": 19,
+      "species": "Curio herreanus"
+    },
+    {
+      "candidate_image_urls": 7,
+      "observation_count": 20,
+      "species": "Ceropegia woodii"
+    },
+    {
+      "candidate_image_urls": 3,
+      "observation_count": 65,
+      "species": "Lithops lesliei"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 2,
+      "species": "Schlumbergera buckleyi"
+    },
+    {
+      "candidate_image_urls": 3,
+      "observation_count": 18,
+      "species": "Schlumbergera russeliana"
+    },
+    {
+      "candidate_image_urls": 14,
+      "observation_count": 13,
+      "species": "Rhipsalis pilocarpa"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 4,
+      "species": "Hatiora salicornioides"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 2,
+      "species": "Epiphyllum anguliger"
+    },
+    {
+      "candidate_image_urls": 6,
+      "observation_count": 54,
+      "species": "Disocactus ackermannii"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Disocactus flagelliformis"
+    },
+    {
+      "candidate_image_urls": 8,
+      "observation_count": 182,
+      "species": "Mammillaria elongata"
+    },
+    {
+      "candidate_image_urls": 4,
+      "observation_count": 84,
+      "species": "Mammillaria hahniana"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Mammillaria gracilis"
+    },
+    {
+      "candidate_image_urls": 4,
+      "observation_count": 11,
+      "species": "Gymnocalycium mihanovichii"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 1,
+      "species": "Echinopsis chamaecereus"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 32,
+      "species": "Echinocactus grusonii"
+    },
+    {
+      "candidate_image_urls": 2,
+      "observation_count": 13,
+      "species": "Hylocereus undatus"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 3,
+      "species": "Parodia magnifica"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Parodia leninghausii"
+    },
+    {
+      "candidate_image_urls": 46,
+      "observation_count": 25,
+      "species": "Rebutia minuscula"
+    },
+    {
+      "candidate_image_urls": 10,
+      "observation_count": 234,
+      "species": "Ficus lyrata"
+    },
+    {
+      "candidate_image_urls": 7,
+      "observation_count": 56,
+      "species": "Ficus deltoidea"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 28,
+      "species": "Schefflera arboricola"
+    },
+    {
+      "candidate_image_urls": 11,
+      "observation_count": 88,
+      "species": "Euphorbia trigona"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Peperomia argyreia"
+    },
+    {
+      "candidate_image_urls": 1,
+      "observation_count": 6,
+      "species": "Peperomia caperata"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 1,
+      "species": "Peperomia polybotrya"
+    },
+    {
+      "candidate_image_urls": 1,
+      "observation_count": 5,
+      "species": "Peperomia prostrata"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 3,
+      "species": "Pilea peperomioides"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 2,
+      "species": "Begonia rex"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 14,
+      "species": "Begonia corallina"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 1,
+      "species": "Begonia masoniana"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Begonia semperflorens"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 4,
+      "species": "Saintpaulia ionantha"
+    },
+    {
+      "candidate_image_urls": 3,
+      "observation_count": 7,
+      "species": "Streptocarpus saxorum"
+    },
+    {
+      "candidate_image_urls": 7,
+      "observation_count": 25,
+      "species": "Sinningia speciosa"
+    },
+    {
+      "candidate_image_urls": 14,
+      "observation_count": 435,
+      "species": "Jasminum sambac"
+    },
+    {
+      "candidate_image_urls": 7,
+      "observation_count": 58,
+      "species": "Hoya pubicalyx"
+    },
+    {
+      "candidate_image_urls": 23,
+      "observation_count": 64,
+      "species": "Hoya kerrii"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 4,
+      "species": "Hoya linearis"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 0,
+      "species": "Hoya compacta"
+    },
+    {
+      "candidate_image_urls": 9,
+      "observation_count": 6,
+      "species": "Hippeastrum vittatum"
+    },
+    {
+      "candidate_image_urls": 22,
+      "observation_count": 132,
+      "species": "Chamaedorea elegans"
+    },
+    {
+      "candidate_image_urls": 0,
+      "observation_count": 1188,
+      "species": "Dypsis lutescens"
+    },
+    {
+      "candidate_image_urls": 23,
+      "observation_count": 413,
+      "species": "Rhapis excelsa"
+    }
+  ]
+}

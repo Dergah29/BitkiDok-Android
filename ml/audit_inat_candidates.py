@@ -48,7 +48,7 @@ def audit(baseline, out, limit, pages, pause):
                 result["status"] = "no_unambiguous_exact_species_match"
             else:
                 result["inat_taxon_id"] = taxon["id"]
-                seen_observations, seen_photos = set(), set()
+                seen_observations, eligible_observations, seen_photos = set(), set(), set()
                 for page in range(1, pages + 1):
                     time.sleep(pause)
                     data = get_json("observations", {
@@ -76,6 +76,7 @@ def audit(baseline, out, limit, pages, pause):
                                     not url.startswith("https://")):
                                 continue
                             seen_photos.add(photo_id)
+                            eligible_observations.add(obs_id)
                             result["candidates"].append({
                                 "observation_id": obs_id, "photo_id": photo_id,
                                 "photo_license": license_code,
@@ -86,7 +87,7 @@ def audit(baseline, out, limit, pages, pause):
                     if len(observations) < 100:
                         break
                 result["candidate_photos"] = len(result["candidates"])
-                result["candidate_observations"] = len(seen_observations)
+                result["candidate_observations"] = len(eligible_observations)
                 result["status"] = "metadata_candidates_only"
         except Exception as exc:
             # A transport/HTTP error is unknown coverage, not zero photos.

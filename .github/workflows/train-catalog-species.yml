@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'ml/prepare_200_species.py'
-      - 'ml/train_species.py'
+      - 'ml/train_catalog_v2.py'
       - '.github/workflows/train-catalog-species.yml'
 permissions:
   contents: read
@@ -22,7 +22,7 @@ jobs:
       - name: Download licensed photos across catalog
         run: python ml/prepare_200_species.py data/houseplants_200.json /tmp/bitkidok-catalog --per-species 25 --minimum 12
       - name: Train eligible classes
-        run: python ml/train_species.py /tmp/bitkidok-catalog /tmp/bitkidok-catalog-model
+        run: python ml/train_catalog_v2.py /tmp/bitkidok-catalog /tmp/bitkidok-catalog-model
       - name: Copy coverage report
         if: always()
         run: |
@@ -31,6 +31,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: bitkidok-catalog-experiment
+          name: bitkidok-catalog-v2-experiment
           path: /tmp/bitkidok-catalog-model/
           if-no-files-found: warn

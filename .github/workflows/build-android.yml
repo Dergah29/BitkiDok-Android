@@ -29,7 +29,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: bitkidok-species-experimental
-          run-id: 35196157117
+          run-id: 35203022732
           github-token: ${{ github.token }}
           path: android/app/src/main/assets
       - name: Check model inputs

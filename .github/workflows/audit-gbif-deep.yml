@@ -1,0 +1,32 @@
+name: Audit deeper GBIF coverage
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/audit_gbif_deep.py'
+      - '.github/workflows/audit-gbif-deep.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Audit deeper licensed-image records
+        run: python ml/audit_gbif_deep.py data/houseplants_200.json data/photo_coverage_200_baseline.json /tmp/gbif-deep.json
+      - name: Summarize
+        if: always()
+        run: |
+          if test -f /tmp/gbif-deep.json; then
+            python -c 'import json; d=json.load(open("/tmp/gbif-deep.json")); print("Extra candidates for",d["species_with_additional_candidates"],"of",d["species_checked"])'
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gbif-deep-coverage
+          path: /tmp/gbif-deep.json
+          if-no-files-found: warn

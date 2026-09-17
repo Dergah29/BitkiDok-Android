@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install requirements
-        run: pip install 'tensorflow==2.16.1' 'Pillow>=10,<12'
+        run: pip install -r ml/requirements.txt
       - name: Collect rights-cleared photos
         run: python ml/prepare_gbif_species.py /tmp/bitkidok-species --per-species 50 --minimum 20
       - name: Train species classifier

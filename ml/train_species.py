@@ -29,19 +29,27 @@ def main(data, output):
                   monitor="val_loss", patience=2, restore_best_weights=True)])
     loss, accuracy = model.evaluate(val, verbose=0)
     output.mkdir(parents=True, exist_ok=True)
-    saved = output / "saved_model"
-    tf.saved_model.save(model, str(saved))
-    converter = tf.lite.TFLiteConverter.from_saved_model(str(saved))
+    converter = tf.lite.TFLiteConverter.from_keras_model(model)
     converter.optimizations = [tf.lite.Optimize.DEFAULT]
-    (output / "species.tflite").write_bytes(converter.convert())
+    model_bytes = converter.convert()
+    interpreter = tf.lite.Interpreter(model_content=model_bytes)
+    interpreter.allocate_tensors()
+    import numpy as np
+    index_in = interpreter.get_input_details()[0]["index"]
+    index_out = interpreter.get_output_details()[0]["index"]
+    for value in (0, 255):
+        interpreter.set_tensor(index_in, np.full((1, 224, 224, 3), value, dtype=np.float32))
+        interpreter.invoke()
+        scores = interpreter.get_tensor(index_out)[0]
+        if not np.isfinite(scores).all() or abs(float(scores.sum()) - 1) > 0.02:
+            raise ValueError("Converted model produced invalid probabilities")
+    (output / "species.tflite").write_bytes(model_bytes)
     (output / "species-labels.json").write_text(json.dumps(names, indent=2))
     (output / "species-metrics.json").write_text(json.dumps({
         "val_accuracy": float(accuracy), "val_loss": float(loss),
         "counts": json.loads((data / "counts.json").read_text()),
         "note": "Same-source held-out split; real-world validation pending."
     }, indent=2))
-    import shutil
-    shutil.rmtree(saved)
     (output / "attribution.json").write_bytes((data / "attribution.json").read_bytes())
 
 if __name__ == "__main__":

@@ -29,7 +29,9 @@ def main(data, output):
                   monitor="val_loss", patience=2, restore_best_weights=True)])
     loss, accuracy = model.evaluate(val, verbose=0)
     output.mkdir(parents=True, exist_ok=True)
-    converter = tf.lite.TFLiteConverter.from_keras_model(model)
+    saved = output / "saved_model"
+    tf.saved_model.save(model, str(saved))
+    converter = tf.lite.TFLiteConverter.from_saved_model(str(saved))
     converter.optimizations = [tf.lite.Optimize.DEFAULT]
     (output / "species.tflite").write_bytes(converter.convert())
     (output / "species-labels.json").write_text(json.dumps(names, indent=2))
@@ -38,6 +40,8 @@ def main(data, output):
         "counts": json.loads((data / "counts.json").read_text()),
         "note": "Same-source held-out split; real-world validation pending."
     }, indent=2))
+    import shutil
+    shutil.rmtree(saved)
     (output / "attribution.json").write_bytes((data / "attribution.json").read_bytes())
 
 if __name__ == "__main__":

@@ -1,0 +1,26 @@
+name: Audit iNaturalist photo candidates
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/audit_inat_candidates.py'
+      - '.github/workflows/audit-inat-candidates.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Audit exact species and per-photo licenses
+        run: python ml/audit_inat_candidates.py data/gbif_deeper_training_result.json /tmp/inat_coverage_99.json --pages 2
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: inat-coverage-99-candidates
+          path: /tmp/inat_coverage_99.json
+          if-no-files-found: warn

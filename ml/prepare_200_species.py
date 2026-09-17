@@ -23,16 +23,27 @@ def collect(catalog_path, output, per_species, minimum):
         species, key = plant["accepted_name"], plant["gbif_taxon_key"]
         slug = species.lower().replace(" ", "_")
         candidates = []
-        for offset in (0, 300, 600, 900):
+        query = {"taxonKey": key, "mediaType": "StillImage",
+                 "basisOfRecord": "HUMAN_OBSERVATION", "limit": 300}
+        try:
+            first_page = request_json("occurrence/search", dict(query, offset=0))
+            total = first_page.get("count", 0)
+        except Exception as exc:
+            print(f"GBIF error for {species}: {exc}", flush=True)
+            first_page, total = {"results": []}, 0
+        # Search later parts of a large result set as well as its first pages.
+        # GBIF offsets above 200000 are not supported by its search endpoint.
+        offsets = [0, 300, 600, 900]
+        if total > 1200:
+            offsets += [min(max(1200, int(total * fraction) - 150), 199700)
+                        for fraction in (0.1, 0.25, 0.5, 0.75, 0.9)]
+        for offset in sorted(set(offsets)):
             try:
-                page = request_json("occurrence/search", {
-                    "taxonKey": key, "mediaType": "StillImage",
-                    "basisOfRecord": "HUMAN_OBSERVATION",
-                    "limit": 300, "offset": offset,
-                })
+                page = first_page if offset == 0 else request_json(
+                    "occurrence/search", dict(query, offset=offset))
             except Exception as exc:
-                print(f"GBIF error for {species}: {exc}", flush=True)
-                break
+                print(f"GBIF page error for {species} at {offset}: {exc}", flush=True)
+                continue
             for record in page.get("results", []):
                 if record.get("taxonKey") != key or record.get("taxonRank") != "SPECIES":
                     continue
@@ -42,7 +53,7 @@ def collect(catalog_path, output, per_species, minimum):
                               and (m.get("identifier") or "").startswith("https://")), None)
                 if media:
                     candidates.append((record, media))
-            if page.get("endOfRecords") or len(candidates) >= per_species * 8:
+            if len(candidates) >= per_species * 8:
                 break
         randomizer.shuffle(candidates)
         seen_occurrences, seen_urls, seen_digests = set(), set(), set()

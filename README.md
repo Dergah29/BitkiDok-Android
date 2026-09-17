@@ -69,3 +69,7 @@ Mənşə/habitat sahələrində yalnız *Monstera deliciosa* üçün [Kew POWO](
 ### Daha dərin foto axtarışı və ikinci model
 
 [İkinci təlim](https://github.com/Dergah29/BitkiDok-Android/actions/runs/35224203639) eyni 101 növ üzrə 1925 təlim və 489 yoxlama fotosu ilə aparıldı; ayrılmış fotolarda top-1 **34,56%**, top-3 **53,17%** oldu. Bu, əvvəlki 40,49% top-1 nəticəsindən aşağıdır, ona görə APK-yə keçirilməyib. [Daha dərin GBIF axtarışı](https://github.com/Dergah29/BitkiDok-Android/actions/runs/35226993243) əvvəllər az foto tapılan 99 növün 49-unda cəmi 407 əlavə URL namizədi gördü; [`data/gbif_deep_coverage_99.json`](data/gbif_deep_coverage_99.json) nəticələri saxlayır. Bunlar hələ yüklənmiş və düzgün etiketlənmiş fotolar deyil, əvvəlki fotolarla üst-üstə düşə bilər. Növbəti təlimdə URL-lər yoxlanmalı, dublikatlar çıxarılmalı və təlim/yoxlama fotoları bitki fərdi üzrə ayrılmalıdır.
+
+### Dərin səhifələrdən foto yığımı nəticəsi
+
+[Üçüncü təlim](https://github.com/Dergah29/BitkiDok-Android/actions/runs/35232494487) GBIF-in sonrakı səhifələrini də yoxladı, amma yüklənmiş işlək foto sayları bütün 200 növ üzrə əvvəlki cəhdlə tam eyni qaldı: 101 model sinfi, 1925 təlim və 489 yoxlama fotosu. Top-1 **34,15%**, top-3 **51,33%** oldu. `data/gbif_deeper_training_result.json` nəticəni saxlayır. Əlavə URL namizədləri doğrulanmış yeni şəkillərə çevrilmədiyi üçün hazırki mənbəni təkrar sorğulamaqla 200 sinfə çıxmaq mümkün olmayıb; yeni hüququ uyğun, növü yoxlanmış foto mənbələri və müstəqil telefon fotosu testi lazımdır. Bu model Android-ə qoşulmayıb.

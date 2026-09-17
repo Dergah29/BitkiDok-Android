@@ -1,0 +1,982 @@
+[
+  {
+    "category": "aroids",
+    "scientific_name": "Monstera deliciosa"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Monstera adansonii"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Monstera obliqua"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Monstera siltepecana"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Monstera dubia"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Rhaphidophora tetrasperma"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Rhaphidophora decursiva"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Epipremnum aureum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Epipremnum pinnatum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Scindapsus pictus"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Scindapsus treubii"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron hederaceum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron erubescens"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron bipinnatifidum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron gloriosum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron melanochrysum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron verrucosum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron micans"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron squamiferum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron billietiae"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron hastatum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron domesticum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron pedatum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron xanadu"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron birkin"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Anthurium andraeanum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Anthurium crystallinum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Anthurium clarinervium"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Anthurium magnificum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Anthurium veitchii"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Anthurium hookeri"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Spathiphyllum wallisii"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Spathiphyllum floribundum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Zamioculcas zamiifolia"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Alocasia amazonica"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Alocasia zebrina"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Alocasia macrorrhizos"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Alocasia baginda"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Alocasia cuprea"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Alocasia reginula"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Colocasia esculenta"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Caladium bicolor"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Syngonium podophyllum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Syngonium erythrophyllum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Aglaonema commutatum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Aglaonema modestum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Aglaonema pictum"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Dieffenbachia seguine"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Dieffenbachia amoena"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Zantedeschia aethiopica"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Dracaena trifasciata"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Dracaena fragrans"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Dracaena marginata"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Dracaena reflexa"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Dracaena sanderiana"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Dracaena angolensis"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Dracaena surculosa"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Dracaena braunii"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Dracaena elliptica"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Chlorophytum comosum"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Chlorophytum orchidastrum"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Asparagus setaceus"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Asparagus densiflorus"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Asparagus plumosus"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Yucca gigantea"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Yucca aloifolia"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Beaucarnea recurvata"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Cordyline fruticosa"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Cordyline australis"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Aspidistra elatior"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Aspidistra lurida"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Haworthiopsis attenuata"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Haworthiopsis fasciata"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Gasteria bicolor"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Gasteria verrucosa"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Aloe vera"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Aloe arborescens"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Aloe juvenna"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Aloe aristata"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Aloe brevifolia"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Crassula ovata"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Crassula perforata"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Crassula muscosa"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Crassula capitella"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Crassula tetragona"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Kalanchoe blossfeldiana"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Kalanchoe tomentosa"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Kalanchoe daigremontiana"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Kalanchoe fedtschenkoi"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Kalanchoe beharensis"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Echeveria elegans"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Echeveria agavoides"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Echeveria pulidonis"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Echeveria lilacina"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Sedum morganianum"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Sedum rubrotinctum"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Sedum adolphii"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Graptopetalum paraguayense"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Pachyphytum oviferum"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Senecio rowleyanus"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Senecio radicans"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Curio herreanus"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Portulacaria afra"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Ceropegia woodii"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Lithops lesliei"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Schlumbergera truncata"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Schlumbergera buckleyi"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Schlumbergera russelliana"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Rhipsalis baccifera"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Rhipsalis cereuscula"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Rhipsalis pilocarpa"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Hatiora salicornioides"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Epiphyllum oxypetalum"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Epiphyllum anguliger"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Disocactus ackermannii"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Disocactus flagelliformis"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Opuntia microdasys"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Opuntia ficus-indica"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Mammillaria elongata"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Mammillaria hahniana"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Mammillaria gracilis"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Gymnocalycium mihanovichii"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Echinopsis oxygona"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Echinopsis chamaecereus"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Echinocactus grusonii"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Ferocactus latispinus"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Astrophytum myriostigma"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Cereus repandus"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Cereus jamacaru"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Hylocereus undatus"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Selenicereus grandiflorus"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Parodia magnifica"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Parodia leninghausii"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Rebutia minuscula"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Pilosocereus pachycladus"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Ficus elastica"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Ficus benjamina"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Ficus lyrata"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Ficus microcarpa"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Ficus pumila"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Ficus benghalensis"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Ficus religiosa"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Ficus deltoidea"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Pachira aquatica"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Schefflera arboricola"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Heptapleurum actinophyllum"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Codiaeum variegatum"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Euphorbia pulcherrima"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Euphorbia trigona"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Euphorbia milii"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Euphorbia tirucalli"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Euphorbia lactea"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Peperomia obtusifolia"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Peperomia argyreia"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Peperomia caperata"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Peperomia polybotrya"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Peperomia prostrata"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Peperomia rotundifolia"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Pilea peperomioides"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Pilea cadierei"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Pilea involucrata"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Pilea microphylla"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Tradescantia zebrina"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Tradescantia pallida"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Tradescantia fluminensis"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Tradescantia spathacea"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Callisia repens"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Fittonia albivenis"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Hypoestes phyllostachya"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Soleirolia soleirolii"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Begonia maculata"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Begonia rex"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Begonia corallina"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Begonia masoniana"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Begonia semperflorens"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Saintpaulia ionantha"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Streptocarpus saxorum"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Streptocarpus rexii"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Gloxinia perennis"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Sinningia speciosa"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Cyclamen persicum"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Hibiscus rosa-sinensis"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Jasminum sambac"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Jasminum polyanthum"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Gardenia jasminoides"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Hoya carnosa"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Hoya pubicalyx"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Hoya kerrii"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Hoya australis"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Hoya linearis"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Hoya compacta"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Medinilla magnifica"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Clivia miniata"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Amaryllis belladonna"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Hippeastrum vittatum"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Chamaedorea elegans"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Chamaedorea seifrizii"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Howea forsteriana"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Dypsis lutescens"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Phoenix roebelenii"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Rhapis excelsa"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Livistona rotundifolia"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Caryota mitis"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Licuala grandis"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Adiantum raddianum"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Adiantum capillus-veneris"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Nephrolepis exaltata"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Nephrolepis cordifolia"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Asplenium nidus"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Asplenium antiquum"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Platycerium bifurcatum"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Pteris cretica"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Pteris ensiformis"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Microsorum diversifolium"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Davallia fejeensis"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Phlebodium aureum"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Blechnum gibbum"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Cyathea cooperi"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Selaginella kraussiana"
+  },
+  {
+    "category": "palms_ferns",
+    "scientific_name": "Selaginella martensii"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Hedera helix"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Hedera canariensis"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Cissus rhombifolia"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Cissus discolor"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Tetrastigma voinierianum"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Muehlenbeckia complexa"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Nolina recurvata"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Araucaria heterophylla"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Podocarpus macrophyllus"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Polyscias fruticosa"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Polyscias scutellaria"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Nertera granadensis"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Maranta leuconeura"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Goeppertia orbifolia"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Goeppertia makoyana"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Goeppertia lancifolia"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Goeppertia roseopicta"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Ctenanthe burle-marxii"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Ctenanthe setosa"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Stromanthe sanguinea"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Musa acuminata"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Strelitzia reginae"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Strelitzia nicolai"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Coffea arabica"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Citrus limon"
+  }
+]

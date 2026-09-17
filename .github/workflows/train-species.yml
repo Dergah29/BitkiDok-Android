@@ -1,0 +1,29 @@
+name: Train additional houseplant species
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/prepare_gbif_species.py'
+      - 'ml/train_species.py'
+      - '.github/workflows/train-species.yml'
+permissions:
+  contents: read
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install requirements
+        run: pip install 'tensorflow==2.16.1' 'Pillow>=10,<12'
+      - name: Collect rights-cleared photos
+        run: python ml/prepare_gbif_species.py /tmp/bitkidok-species --per-species 50 --minimum 20
+      - name: Train species classifier
+        run: python ml/train_species.py /tmp/bitkidok-species /tmp/bitkidok-model
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bitkidok-species-experimental
+          path: /tmp/bitkidok-model/

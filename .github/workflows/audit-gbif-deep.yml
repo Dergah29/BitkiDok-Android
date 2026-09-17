@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Install image metadata dependencies
+        run: pip install Pillow
       - name: Audit deeper licensed-image records
         run: python ml/audit_gbif_deep.py data/houseplants_200.json data/photo_coverage_200_baseline.json /tmp/gbif-deep.json
       - name: Summarize

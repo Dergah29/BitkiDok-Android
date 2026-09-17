@@ -54,7 +54,7 @@ public final class MainActivity extends Activity {
         title.setTextColor(Color.rgb(28, 94, 51));
         panel.addView(title);
         TextView note = new TextView(this);
-        note.setText("Offline foto analizi • ilkin sınaq\n10 ev bitkisi üçün növ təxmini. Real fotolarda dəqiqlik ayrıca yoxlanmalıdır; başqa bitkilərdə nəticə səhv ola bilər.");
+        note.setText("Offline foto analizi • ilkin sınaq\n21 ev bitkisi üçün növ təxmini. Real fotolarda dəqiqlik ayrıca yoxlanmalıdır; başqa bitkilərdə nəticə səhv ola bilər.");
         note.setTextSize(16);
         note.setPadding(0, 14, 0, 20);
         panel.addView(note);
@@ -151,12 +151,20 @@ public final class MainActivity extends Activity {
             float confidence = scores[0][best];
             if (!Float.isFinite(confidence)) throw new IllegalStateException("Invalid model output");
             String latin = labels.getString(best).replace('_', ' ');
-            if (confidence < 0.45f) {
-                return "Bitki növünü etibarlı müəyyən edə bilmədim. Daha aydın şəkil çək və ya bitkinin adını əl ilə seç.\\n\\nTəklif edilən növ: " + latin + " (model göstəricisi " + String.format(Locale.US, "%.0f%%", confidence * 100) + ").";
+            Integer[] order = new Integer[labels.length()];
+            for (int i = 0; i < order.length; i++) order[i] = i;
+            java.util.Arrays.sort(order, (left, right) -> Float.compare(scores[0][right], scores[0][left]));
+            StringBuilder choices = new StringBuilder();
+            for (int i = 0; i < Math.min(3, order.length); i++) {
+                choices.append("\\n").append(i + 1).append(". ")
+                       .append(labels.getString(order[i]).replace('_', ' '));
             }
-            return "Mümkün bitki növü: " + latin
-                + "\\nModel göstəricisi: " + String.format(Locale.US, "%.0f%%", confidence * 100)
-                + "\\n\\nBu göstərici düzgün tanınma ehtimalı deyil. Model yalnız 10 növ arasında seçim edir və naməlum bitkini də bunlardan birinə aid edə bilər. Xəstəlik nəticəsi bu ekranda verilməyəcək; ayrıca təsdiq tələb edir.";
+            if (confidence < 0.45f) {
+                return "Bitki növünü etibarlı müəyyən edə bilmədim. Daha aydın şəkil çək.\\nTəklif edilən 3 növ:" + choices;
+            }
+            return "Mümkün bitki növləri:" + choices
+                + "\\n\\nİlk seçim üçün model göstəricisi: " + String.format(Locale.US, "%.0f%%", confidence * 100)
+                + "\\nBu göstərici düzgün tanınma ehtimalı deyil. Model yalnız 21 növ arasında seçim edir və naməlum bitkini də bunlardan birinə aid edə bilər. Xəstəlik nəticəsi bu ekranda verilmir.";
         }
     }
 

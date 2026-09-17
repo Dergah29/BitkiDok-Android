@@ -1,0 +1,291 @@
+{
+  "warning": "GBIF matches and iNaturalist observation counts are metadata leads, not licensed photo coverage or approved training classes.",
+  "sources": [
+    "https://api.gbif.org/v1/species/match",
+    "https://api.gbif.org/v1/species/{accepted_key}",
+    "https://api.inaturalist.org/v1/taxa/autocomplete"
+  ],
+  "candidates": [
+    {
+      "requested_name": "Alocasia micholitziana",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Alocasia micholitziana Sander",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 5329899,
+        "already_in_catalog_accepted_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 327369,
+          "observations_count": 705
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Alocasia micholitziana Sander",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null
+      }
+    },
+    {
+      "requested_name": "Hoya obovata",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Hoya obovata Decne.",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 3573084,
+        "already_in_catalog_accepted_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 547964,
+          "observations_count": 27
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Hoya obovata Decne.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null
+      }
+    },
+    {
+      "requested_name": "Pilea mollis",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Pilea mollis Wedd.",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 5670312,
+        "already_in_catalog_accepted_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 431456,
+          "observations_count": 232
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Pilea mollis Wedd.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null
+      }
+    },
+    {
+      "requested_name": "Dischidia nummularia",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 98,
+        "scientificName": "Dischidia nummularia R.Br.",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 7439694,
+        "already_in_catalog_accepted_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 372044,
+          "observations_count": 1066
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Dischidia nummularia R.Br.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null
+      }
+    },
+    {
+      "requested_name": "Hoya wayetii",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Hoya wayetii Kloppenb.",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 3571594,
+        "already_in_catalog_accepted_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 947333,
+          "observations_count": 23
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Hoya wayetii Kloppenb.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null
+      }
+    },
+    {
+      "requested_name": "Calathea warscewiczii",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Calathea warscewiczii (L.Mathieu ex Planch.) Planch. & Linden",
+        "rank": "SPECIES",
+        "status": "SYNONYM",
+        "key": 8184122,
+        "already_in_catalog_accepted_keys": false
+      },
+      "inat_exact_species": [],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Goeppertia warscewiczii (L.Mathieu ex Planch.) Borchs. & Suárez",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null
+      }
+    },
+    {
+      "requested_name": "Ctenanthe setosa",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Ctenanthe setosa (Roscoe) Eichler",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 2762422,
+        "already_in_catalog_accepted_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 327295,
+          "observations_count": 8
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Ctenanthe setosa (Roscoe) Eichler",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null
+      }
+    },
+    {
+      "requested_name": "Hoya lacunosa",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Hoya lacunosa Blume",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 3573874,
+        "already_in_catalog_accepted_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 425662,
+          "observations_count": 105
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Hoya lacunosa Blume",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null
+      }
+    },
+    {
+      "requested_name": "Monstera pinnatipartita",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Monstera pinnatipartita Schott",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 2868226,
+        "already_in_catalog_accepted_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 705098,
+          "observations_count": 508
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Monstera pinnatipartita Schott",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null
+      }
+    },
+    {
+      "requested_name": "Begonia amphioxus",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Begonia amphioxus Sands",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 4159185,
+        "already_in_catalog_accepted_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 1283446,
+          "observations_count": 15
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Begonia amphioxus Sands",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null
+      }
+    },
+    {
+      "requested_name": "Hoya retusa",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 98,
+        "scientificName": "Hoya retusa Dalzell",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 7559597,
+        "already_in_catalog_accepted_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 960178,
+          "observations_count": 11
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Hoya retusa Dalzell",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null
+      }
+    }
+  ]
+}

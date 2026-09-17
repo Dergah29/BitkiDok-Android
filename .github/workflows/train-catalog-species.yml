@@ -1,0 +1,36 @@
+name: Train catalog species experiment
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/prepare_200_species.py'
+      - 'ml/train_species.py'
+      - '.github/workflows/train-catalog-species.yml'
+permissions:
+  contents: read
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install trainer dependencies
+        run: pip install -r ml/requirements.txt
+      - name: Download licensed photos across catalog
+        run: python ml/prepare_200_species.py data/houseplants_200.json /tmp/bitkidok-catalog --per-species 25 --minimum 12
+      - name: Train eligible classes
+        run: python ml/train_species.py /tmp/bitkidok-catalog /tmp/bitkidok-catalog-model
+      - name: Copy coverage report
+        if: always()
+        run: |
+          mkdir -p /tmp/bitkidok-catalog-model
+          if test -f /tmp/bitkidok-catalog/coverage.json; then cp /tmp/bitkidok-catalog/coverage.json /tmp/bitkidok-catalog-model/coverage.json; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bitkidok-catalog-experiment
+          path: /tmp/bitkidok-catalog-model/
+          if-no-files-found: warn

@@ -1,0 +1,26 @@
+name: Audit accepted GBIF taxon ranks
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/audit_accepted_ranks.py'
+      - '.github/workflows/audit-accepted-ranks.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Resolve accepted rank of every synonym
+        run: python ml/audit_accepted_ranks.py data/catalog_taxonomy_audit_200.json /tmp/accepted_rank_audit.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: accepted-rank-audit
+          path: /tmp/accepted_rank_audit.json
+          if-no-files-found: warn

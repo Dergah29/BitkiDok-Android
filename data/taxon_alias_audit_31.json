@@ -1,0 +1,720 @@
+{
+  "catalog_gap_names_checked": 31,
+  "sources": [
+    "https://api.gbif.org/v1/species/{gbif_taxon_key}",
+    "https://api.inaturalist.org/v1/taxa/autocomplete?q={catalog_name}"
+  ],
+  "warning": "Suggestions are not a synonym mapping. Botanical review is required before merging species labels or collecting photos under another name.",
+  "results": [
+    {
+      "catalog_name": "Philodendron bipinnatifidum",
+      "gbif_taxon_key": 10965694,
+      "gbif": {
+        "canonicalName": "Philodendron bipinnatifidum",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Philodendron bipinnatifidum Schott ex Kunth, 1841"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Thaumatophyllum bipinnatifidum",
+          "rank": "species",
+          "id": 985710,
+          "observations_count": 11536
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Philodendron micans",
+      "gbif_taxon_key": 2871010,
+      "gbif": {
+        "canonicalName": "Philodendron micans",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 7228286,
+        "accepted": "Philodendron hederaceum var. hederaceum",
+        "scientificName": "Philodendron micans Klotzsch ex K.Koch"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Philodendron hederaceum hederaceum",
+          "rank": "variety",
+          "id": 314912,
+          "observations_count": 442
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Philodendron domesticum",
+      "gbif_taxon_key": 3604671,
+      "gbif": {
+        "canonicalName": "Philodendron domesticum",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Philodendron ×domesticum G.S.Bunting"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Philodendron",
+          "rank": "genus",
+          "id": 69807,
+          "observations_count": 43856
+        },
+        {
+          "name": "Philodendron × domesticum",
+          "rank": "hybrid",
+          "id": 1514443,
+          "observations_count": 7
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Philodendron xanadu",
+      "gbif_taxon_key": 2870723,
+      "gbif": {
+        "canonicalName": "Philodendron xanadu",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 9669385,
+        "accepted": "Thaumatophyllum xanadu (Croat, J.Boos & Mayo) Sakur., Calazans & Mayo",
+        "scientificName": "Philodendron xanadu Croat, Mayo & J.Boos"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Thaumatophyllum xanadu",
+          "rank": "species",
+          "id": 985726,
+          "observations_count": 3922
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Alocasia amazonica",
+      "gbif_taxon_key": 7412524,
+      "gbif": {
+        "canonicalName": "Alocasia amazonica",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 5532250,
+        "accepted": "Alocasia ×mortfontanensis André",
+        "scientificName": "Alocasia ×amazonica André"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Alocasia",
+          "rank": "genus",
+          "id": 69234,
+          "observations_count": 49357
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Dieffenbachia amoena",
+      "gbif_taxon_key": 11211751,
+      "gbif": {
+        "canonicalName": "Dieffenbachia amoena",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Dieffenbachia amoena Nichols"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Dieffenbachia seguine",
+          "rank": "species",
+          "id": 206266,
+          "observations_count": 12229
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Dracaena trifasciata",
+      "gbif_taxon_key": 11041822,
+      "gbif": {
+        "canonicalName": "Dracaena trifasciata",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Dracaena trifasciata (Prain) Mabb."
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Sansevieria trifasciata",
+          "rank": "species",
+          "id": 67710,
+          "observations_count": 33413
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Dracaena marginata",
+      "gbif_taxon_key": 10818704,
+      "gbif": {
+        "canonicalName": "Dracaena marginata",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Dracaena marginata Lem."
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Dracaena reflexa angustifolia",
+          "rank": "variety",
+          "id": 126509,
+          "observations_count": 5402
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Dracaena angolensis",
+      "gbif_taxon_key": 10961470,
+      "gbif": {
+        "canonicalName": "Dracaena angolensis",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Dracaena angolensis (Welw. ex Carrière) Byng & Christenh."
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Sansevieria cylindrica",
+          "rank": "species",
+          "id": 168422,
+          "observations_count": 2903
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Asparagus plumosus",
+      "gbif_taxon_key": 2768693,
+      "gbif": {
+        "canonicalName": "Asparagus plumosus",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 2768686,
+        "accepted": "Asparagus setaceus (Kunth) Jessop",
+        "scientificName": "Asparagus plumosus Baker"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Asparagus setaceus",
+          "rank": "species",
+          "id": 75604,
+          "observations_count": 9697
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Gasteria verrucosa",
+      "gbif_taxon_key": 2778581,
+      "gbif": {
+        "canonicalName": "Gasteria verrucosa",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 2778570,
+        "accepted": "Gasteria carinata var. verrucosa (Mill.) van Jaarsv.",
+        "scientificName": "Gasteria verrucosa (Mill.) Duval"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Gasteria carinata verrucosa",
+          "rank": "variety",
+          "id": 479480,
+          "observations_count": 55
+        },
+        {
+          "name": "× Aristeria beguinii",
+          "rank": "hybrid",
+          "id": 1598707,
+          "observations_count": 20
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Aloe aristata",
+      "gbif_taxon_key": 2777374,
+      "gbif": {
+        "canonicalName": "Aloe aristata",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 9505138,
+        "accepted": "Aristaloe aristata (Haw.) Boatwr. & J.C.Manning",
+        "scientificName": "Aloe aristata Haw."
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Aristaloe aristata",
+          "rank": "species",
+          "id": 580226,
+          "observations_count": 1460
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Sedum rubrotinctum",
+      "gbif_taxon_key": 5688562,
+      "gbif": {
+        "canonicalName": "Sedum rubrotinctum",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Sedum ×rubrotinctum R.T.Clausen"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Sedum × rubrotinctum",
+          "rank": "hybrid",
+          "id": 276077,
+          "observations_count": 1450
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Senecio rowleyanus",
+      "gbif_taxon_key": 7638718,
+      "gbif": {
+        "canonicalName": "Senecio rowleyanus",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Senecio rowleyanus M.Jacobs, 1968"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Curio rowleyanus",
+          "rank": "species",
+          "id": 943005,
+          "observations_count": 1878
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Senecio radicans",
+      "gbif_taxon_key": 3107393,
+      "gbif": {
+        "canonicalName": "Senecio radicans",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 3107396,
+        "accepted": "Curio radicans (L.) P.V.Heath",
+        "scientificName": "Senecio radicans (L.fil.) Sch.Bip."
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Curio radicans",
+          "rank": "species",
+          "id": 913212,
+          "observations_count": 1538
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Schlumbergera buckleyi",
+      "gbif_taxon_key": 5620162,
+      "gbif": {
+        "canonicalName": "Schlumbergera buckleyi",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Schlumbergera ×buckleyi (T.Moore) Tjaden"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Schlumbergera × buckleyi",
+          "rank": "hybrid",
+          "id": 1596733,
+          "observations_count": 805
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Schlumbergera russeliana",
+      "gbif_taxon_key": 5620092,
+      "gbif": {
+        "canonicalName": "Schlumbergera russeliana",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Schlumbergera russeliana (Hook.) Britton & Rose"
+      },
+      "inat_autocomplete_candidates": [],
+      "errors": []
+    },
+    {
+      "catalog_name": "Hatiora salicornioides",
+      "gbif_taxon_key": 7280906,
+      "gbif": {
+        "canonicalName": "Hatiora salicornioides",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Hatiora salicornioides Britton & Rose"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Hatiora salicornoides",
+          "rank": "species",
+          "id": 1453005,
+          "observations_count": 621
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Epiphyllum anguliger",
+      "gbif_taxon_key": 5621317,
+      "gbif": {
+        "canonicalName": "Epiphyllum anguliger",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 10771315,
+        "accepted": "Disocactus anguliger (Lem.) M.Á.Cruz & S.Arias",
+        "scientificName": "Epiphyllum anguliger (Lem.) H.P.Kelsey & Dayton, 1942"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Disocactus anguliger",
+          "rank": "species",
+          "id": 927986,
+          "observations_count": 303
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Disocactus flagelliformis",
+      "gbif_taxon_key": 3949733,
+      "gbif": {
+        "canonicalName": "Disocactus flagelliformis",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 7283331,
+        "accepted": "Aporocactus flagelliformis (L.) Lem.",
+        "scientificName": "Disocactus flagelliformis (L.) Barthlott"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Aporocactus flagelliformis",
+          "rank": "species",
+          "id": 206729,
+          "observations_count": 360
+        },
+        {
+          "name": "Selenicereus × innesii",
+          "rank": "hybrid",
+          "id": 533007,
+          "observations_count": 5
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Mammillaria gracilis",
+      "gbif_taxon_key": 7280095,
+      "gbif": {
+        "canonicalName": "Mammillaria gracilis",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 5623188,
+        "accepted": "Mammillaria vetula subsp. gracilis (Pfeiff.) D.R.Hunt",
+        "scientificName": "Mammillaria gracilis Pfeiff."
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Mammillaria vetula gracilis",
+          "rank": "subspecies",
+          "id": 354647,
+          "observations_count": 516
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Echinopsis chamaecereus",
+      "gbif_taxon_key": 5623114,
+      "gbif": {
+        "canonicalName": "Echinopsis chamaecereus",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 3944596,
+        "accepted": "Chamaecereus silvestrii (Speg.) Britton & Rose",
+        "scientificName": "Echinopsis chamaecereus H.Friedrich & Glaetzle"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Lobivia silvestrii",
+          "rank": "species",
+          "id": 869991,
+          "observations_count": 2142
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Echinocactus grusonii",
+      "gbif_taxon_key": 7280494,
+      "gbif": {
+        "canonicalName": "Echinocactus grusonii",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 10911827,
+        "accepted": "Kroenleinia grusonii (Hildm.) Lodé",
+        "scientificName": "Echinocactus grusonii Hildm."
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Kroenleinia grusonii",
+          "rank": "species",
+          "id": 869962,
+          "observations_count": 11818
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Hylocereus undatus",
+      "gbif_taxon_key": 3084394,
+      "gbif": {
+        "canonicalName": "Hylocereus undatus",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 10334868,
+        "accepted": "Selenicereus undatus (Haw.) D.R.Hunt",
+        "scientificName": "Hylocereus undatus (Haw.) Britton & Rose"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Selenicereus undatus",
+          "rank": "species",
+          "id": 1038928,
+          "observations_count": 11549
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Parodia leninghausii",
+      "gbif_taxon_key": 8565818,
+      "gbif": {
+        "canonicalName": "Parodia leninghausii",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Parodia leninghausii (F.Haage) F.H.Brandt"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Parodia lenninghausii",
+          "rank": "species",
+          "id": 901906,
+          "observations_count": 759
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Schefflera arboricola",
+      "gbif_taxon_key": 8322892,
+      "gbif": {
+        "canonicalName": "Schefflera arboricola",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Schefflera arboricola Hayata, 1916"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Heptapleurum arboricola",
+          "rank": "species",
+          "id": 1239449,
+          "observations_count": 26415
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Peperomia argyreia",
+      "gbif_taxon_key": 4189296,
+      "gbif": {
+        "canonicalName": "Peperomia argyreia",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Peperomia argyreia (Miq.) É.Morren"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Peperomia argyraea",
+          "rank": "species",
+          "id": 1600433,
+          "observations_count": 736
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Begonia semperflorens",
+      "gbif_taxon_key": 2874718,
+      "gbif": {
+        "canonicalName": "Begonia semperflorens",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Begonia semperflorens Link & Otto"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Begonia cucullata",
+          "rank": "species",
+          "id": 159204,
+          "observations_count": 11135
+        },
+        {
+          "name": "Begonia × semperflorens-cultorum",
+          "rank": "hybrid",
+          "id": 380721,
+          "observations_count": 9257
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Saintpaulia ionantha",
+      "gbif_taxon_key": 6365236,
+      "gbif": {
+        "canonicalName": "Saintpaulia ionantha",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 10796900,
+        "accepted": "Streptocarpus ionanthus subsp. ionanthus",
+        "scientificName": "Saintpaulia ionantha H.Wendl."
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Streptocarpus ionanthus",
+          "rank": "species",
+          "id": 927983,
+          "observations_count": 2233
+        },
+        {
+          "name": "Streptocarpus ionanthus grotei",
+          "rank": "subspecies",
+          "id": 1291663,
+          "observations_count": 35
+        },
+        {
+          "name": "Streptocarpus ionanthus rupicola",
+          "rank": "subspecies",
+          "id": 1456134,
+          "observations_count": 6
+        },
+        {
+          "name": "Streptocarpus ionanthus grandifolius",
+          "rank": "subspecies",
+          "id": 1291664,
+          "observations_count": 3
+        },
+        {
+          "name": "Streptocarpus ionanthus velutinus",
+          "rank": "subspecies",
+          "id": 1456133,
+          "observations_count": 3
+        },
+        {
+          "name": "Streptocarpus ionanthus diplotrichus",
+          "rank": "variety",
+          "id": 1456151,
+          "observations_count": 2
+        },
+        {
+          "name": "Streptocarpus ionanthus pendulus",
+          "rank": "subspecies",
+          "id": 1456136,
+          "observations_count": 2
+        },
+        {
+          "name": "Streptocarpus nitidus",
+          "rank": "species",
+          "id": 1456129,
+          "observations_count": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Hoya compacta",
+      "gbif_taxon_key": 3574887,
+      "gbif": {
+        "canonicalName": "Hoya compacta",
+        "rank": "SPECIES",
+        "taxonomicStatus": "SYNONYM",
+        "acceptedKey": 8658195,
+        "accepted": "Hoya carnosa (L.fil.) R.Br.",
+        "scientificName": "Hoya compacta C.M.Burton"
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Hoya carnosa",
+          "rank": "species",
+          "id": 129523,
+          "observations_count": 6424
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catalog_name": "Dypsis lutescens",
+      "gbif_taxon_key": 2735935,
+      "gbif": {
+        "canonicalName": "Dypsis lutescens",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED",
+        "acceptedKey": null,
+        "accepted": null,
+        "scientificName": "Dypsis lutescens (H.Wendl.) Beentje & J.Dransf."
+      },
+      "inat_autocomplete_candidates": [
+        {
+          "name": "Chrysalidocarpus lutescens",
+          "rank": "species",
+          "id": 276548,
+          "observations_count": 17288
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

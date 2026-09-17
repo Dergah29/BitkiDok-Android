@@ -46,3 +46,8 @@ Bu repo hazırda Node.js veb prototipidir, Android APK/AAB deyil. GitHub Actions
 ### Daha çox növ (daxili sınaq)
 
 [İkinci təlimdə](https://github.com/Dergah29/BitkiDok-Android/actions/runs/35203022732) lisenziyası ayrıca yoxlanmış GBIF fotoları əsasında 21 növlük eksperimental model yaradıldı. Ayrılmış eyni mənbəli şəkillərdə ilk seçim dəqiqliyi 58,0% oldu; naməlum növləri rədd etməyi bilmir. [Android build](https://github.com/Dergah29/BitkiDok-Android/actions/runs/35204043013) model və etiketləri APK-yə daxil edir, ekranda ilk üç təxmini göstərir. Növlərin tam siyahısı `bitkidok-species-experimental` artifact-ində `species-labels.json` içindədir; istifadə olunan şəkillərin müəllif, mənbə və lisenziyası `attribution.json`-dadır. Bu keyfiyyət istehlakçıya dəqiq tanıma vəd etmək üçün kifayət deyil; ayrıca real foto sınağı və daha çox düzgün etiketli data lazımdır. API abunəliyi foto datasetinin mülkiyyət/lisenziyasını vermir, ona görə dataset alışı yalnız yazılı model təlimi və kommersiya istifadə hüquqları aydın olanda nəzərdən keçirilməlidir.
+
+
+### 200 ev bitkisi kataloqu
+
+[`data/houseplants_200.json`](data/houseplants_200.json) faylında 200 ayrı botaniki qeyd və GBIF taxon açarı var. Siyahı 245 namizəddən [GBIF ad yoxlaması](https://github.com/Dergah29/BitkiDok-Android/actions/runs/35206411921) ilə seçilib; 21 qeyd hazırkı eksperimental foto modelinə daxildir, 179 qeyd hələ yalnız kataloq namizədidir. Növlərin evdə saxlanması, satış adları, qulluq məlumatları və şəkil tanıma keyfiyyəti ayrıca redaktə və sınaq tələb edir. Kataloq əlavə edilməsi APK-nin 200 növü fotodan tanıması demək deyil.

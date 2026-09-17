@@ -1,0 +1,32 @@
+name: Audit Commons plant photos
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/audit_commons_candidates.py'
+      - 'data/photo_coverage_200_baseline.json'
+      - '.github/workflows/audit-commons.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python ml/audit_commons_candidates.py data/photo_coverage_200_baseline.json /tmp/commons-candidates.json
+      - name: Summary
+        if: always()
+        run: |
+          if test -f /tmp/commons-candidates.json; then
+            python -c 'import json; d=json.load(open("/tmp/commons-candidates.json")); print("Species with candidates:",d["with_candidates"],"/",d["missing_species_checked"])'
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: commons-candidates
+          path: /tmp/commons-candidates.json
+          if-no-files-found: warn

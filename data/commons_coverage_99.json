@@ -1,0 +1,406 @@
+{
+  "run_url": "https://github.com/Dergah29/BitkiDok-Android/actions/runs/35224834305",
+  "source": "Wikimedia Commons file title and image license metadata",
+  "species_checked": 99,
+  "species_with_candidates": 14,
+  "total_candidate_files": 67,
+  "warning": "Metadata candidates only; species identification, individual license terms, duplicates, image availability and train/test separation are not yet verified.",
+  "species": [
+    {
+      "licensed_filename_candidates": 4,
+      "species": "Kalanchoe blossfeldiana"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Rhaphidophora tetrasperma"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Scindapsus treubii"
+    },
+    {
+      "licensed_filename_candidates": 2,
+      "species": "Philodendron bipinnatifidum"
+    },
+    {
+      "licensed_filename_candidates": 1,
+      "species": "Philodendron melanochrysum"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Philodendron micans"
+    },
+    {
+      "licensed_filename_candidates": 4,
+      "species": "Philodendron billietiae"
+    },
+    {
+      "licensed_filename_candidates": 5,
+      "species": "Philodendron hastatum"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Philodendron domesticum"
+    },
+    {
+      "licensed_filename_candidates": 1,
+      "species": "Philodendron xanadu"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Anthurium crystallinum"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Anthurium clarinervium"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Anthurium magnificum"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Anthurium veitchii"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Anthurium hookeri"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Spathiphyllum floribundum"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Zamioculcas zamiifolia"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Alocasia amazonica"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Alocasia zebrina"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Alocasia baginda"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Alocasia cuprea"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Alocasia reginula"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Syngonium erythrophyllum"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Aglaonema modestum"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Aglaonema pictum"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Dieffenbachia amoena"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Dracaena trifasciata"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Dracaena marginata"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Dracaena angolensis"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Dracaena surculosa"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Dracaena braunii"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Dracaena elliptica"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Chlorophytum orchidastrum"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Asparagus plumosus"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Aspidistra lurida"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Haworthiopsis attenuata"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Haworthiopsis fasciata"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Gasteria bicolor"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Gasteria verrucosa"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Aloe juvenna"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Aloe aristata"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Aloe brevifolia"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Kalanchoe tomentosa"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Echeveria elegans"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Echeveria agavoides"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Echeveria pulidonis"
+    },
+    {
+      "licensed_filename_candidates": 3,
+      "species": "Echeveria lilacina"
+    },
+    {
+      "licensed_filename_candidates": 2,
+      "species": "Sedum morganianum"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Sedum rubrotinctum"
+    },
+    {
+      "licensed_filename_candidates": 3,
+      "species": "Sedum adolphi"
+    },
+    {
+      "licensed_filename_candidates": 11,
+      "species": "Graptopetalum paraguayense"
+    },
+    {
+      "licensed_filename_candidates": 23,
+      "species": "Pachyphytum oviferum"
+    },
+    {
+      "licensed_filename_candidates": 1,
+      "species": "Senecio rowleyanus"
+    },
+    {
+      "licensed_filename_candidates": 4,
+      "species": "Senecio radicans"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Curio herreanus"
+    },
+    {
+      "licensed_filename_candidates": 3,
+      "species": "Ceropegia woodii"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Lithops lesliei"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Schlumbergera buckleyi"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Schlumbergera russeliana"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Rhipsalis pilocarpa"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Hatiora salicornioides"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Epiphyllum anguliger"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Disocactus ackermannii"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Disocactus flagelliformis"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Mammillaria elongata"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Mammillaria hahniana"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Mammillaria gracilis"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Gymnocalycium mihanovichii"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Echinopsis chamaecereus"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Echinocactus grusonii"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Hylocereus undatus"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Parodia magnifica"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Parodia leninghausii"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Rebutia minuscula"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Ficus lyrata"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Ficus deltoidea"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Schefflera arboricola"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Euphorbia trigona"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Peperomia argyreia"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Peperomia caperata"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Peperomia polybotrya"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Peperomia prostrata"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Pilea peperomioides"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Begonia rex"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Begonia corallina"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Begonia masoniana"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Begonia semperflorens"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Saintpaulia ionantha"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Streptocarpus saxorum"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Sinningia speciosa"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Jasminum sambac"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Hoya pubicalyx"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Hoya kerrii"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Hoya linearis"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Hoya compacta"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Hippeastrum vittatum"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Chamaedorea elegans"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Dypsis lutescens"
+    },
+    {
+      "licensed_filename_candidates": 0,
+      "species": "Rhapis excelsa"
+    }
+  ]
+}

@@ -1,7 +1,87 @@
 [
   {
     "category": "aroids",
+    "scientific_name": "Aglaonema commutatum"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Aloe vera"
+  },
+  {
+    "category": "flowers",
+    "scientific_name": "Begonia maculata"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Chlorophytum comosum"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Codiaeum variegatum"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Crassula ovata"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Dieffenbachia seguine"
+  },
+  {
+    "category": "asparagus",
+    "scientific_name": "Dracaena fragrans"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Epipremnum aureum"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Ficus benjamina"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Ficus elastica"
+  },
+  {
+    "category": "others",
+    "scientific_name": "Hedera helix"
+  },
+  {
+    "category": "succulents",
+    "scientific_name": "Kalanchoe blossfeldiana"
+  },
+  {
+    "category": "aroids",
     "scientific_name": "Monstera deliciosa"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Pachira aquatica"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Peperomia obtusifolia"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Philodendron hederaceum"
+  },
+  {
+    "category": "cacti",
+    "scientific_name": "Schlumbergera truncata"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Spathiphyllum wallisii"
+  },
+  {
+    "category": "aroids",
+    "scientific_name": "Syngonium podophyllum"
+  },
+  {
+    "category": "foliage",
+    "scientific_name": "Tradescantia zebrina"
   },
   {
     "category": "aroids",
@@ -29,10 +109,6 @@
   },
   {
     "category": "aroids",
-    "scientific_name": "Epipremnum aureum"
-  },
-  {
-    "category": "aroids",
     "scientific_name": "Epipremnum pinnatum"
   },
   {
@@ -42,10 +118,6 @@
   {
     "category": "aroids",
     "scientific_name": "Scindapsus treubii"
-  },
-  {
-    "category": "aroids",
-    "scientific_name": "Philodendron hederaceum"
   },
   {
     "category": "aroids",
@@ -125,10 +197,6 @@
   },
   {
     "category": "aroids",
-    "scientific_name": "Spathiphyllum wallisii"
-  },
-  {
-    "category": "aroids",
     "scientific_name": "Spathiphyllum floribundum"
   },
   {
@@ -169,15 +237,7 @@
   },
   {
     "category": "aroids",
-    "scientific_name": "Syngonium podophyllum"
-  },
-  {
-    "category": "aroids",
     "scientific_name": "Syngonium erythrophyllum"
-  },
-  {
-    "category": "aroids",
-    "scientific_name": "Aglaonema commutatum"
   },
   {
     "category": "aroids",
@@ -186,10 +246,6 @@
   {
     "category": "aroids",
     "scientific_name": "Aglaonema pictum"
-  },
-  {
-    "category": "aroids",
-    "scientific_name": "Dieffenbachia seguine"
   },
   {
     "category": "aroids",
@@ -202,10 +258,6 @@
   {
     "category": "asparagus",
     "scientific_name": "Dracaena trifasciata"
-  },
-  {
-    "category": "asparagus",
-    "scientific_name": "Dracaena fragrans"
   },
   {
     "category": "asparagus",
@@ -234,10 +286,6 @@
   {
     "category": "asparagus",
     "scientific_name": "Dracaena elliptica"
-  },
-  {
-    "category": "asparagus",
-    "scientific_name": "Chlorophytum comosum"
   },
   {
     "category": "asparagus",
@@ -301,10 +349,6 @@
   },
   {
     "category": "succulents",
-    "scientific_name": "Aloe vera"
-  },
-  {
-    "category": "succulents",
     "scientific_name": "Aloe arborescens"
   },
   {
@@ -321,10 +365,6 @@
   },
   {
     "category": "succulents",
-    "scientific_name": "Crassula ovata"
-  },
-  {
-    "category": "succulents",
     "scientific_name": "Crassula perforata"
   },
   {
@@ -338,10 +378,6 @@
   {
     "category": "succulents",
     "scientific_name": "Crassula tetragona"
-  },
-  {
-    "category": "succulents",
-    "scientific_name": "Kalanchoe blossfeldiana"
   },
   {
     "category": "succulents",
@@ -418,10 +454,6 @@
   {
     "category": "succulents",
     "scientific_name": "Lithops lesliei"
-  },
-  {
-    "category": "cacti",
-    "scientific_name": "Schlumbergera truncata"
   },
   {
     "category": "cacti",
@@ -541,14 +573,6 @@
   },
   {
     "category": "foliage",
-    "scientific_name": "Ficus elastica"
-  },
-  {
-    "category": "foliage",
-    "scientific_name": "Ficus benjamina"
-  },
-  {
-    "category": "foliage",
     "scientific_name": "Ficus lyrata"
   },
   {
@@ -573,19 +597,11 @@
   },
   {
     "category": "foliage",
-    "scientific_name": "Pachira aquatica"
-  },
-  {
-    "category": "foliage",
     "scientific_name": "Schefflera arboricola"
   },
   {
     "category": "foliage",
     "scientific_name": "Heptapleurum actinophyllum"
-  },
-  {
-    "category": "foliage",
-    "scientific_name": "Codiaeum variegatum"
   },
   {
     "category": "foliage",
@@ -606,10 +622,6 @@
   {
     "category": "foliage",
     "scientific_name": "Euphorbia lactea"
-  },
-  {
-    "category": "foliage",
-    "scientific_name": "Peperomia obtusifolia"
   },
   {
     "category": "foliage",
@@ -649,10 +661,6 @@
   },
   {
     "category": "foliage",
-    "scientific_name": "Tradescantia zebrina"
-  },
-  {
-    "category": "foliage",
     "scientific_name": "Tradescantia pallida"
   },
   {
@@ -678,10 +686,6 @@
   {
     "category": "foliage",
     "scientific_name": "Soleirolia soleirolii"
-  },
-  {
-    "category": "flowers",
-    "scientific_name": "Begonia maculata"
   },
   {
     "category": "flowers",
@@ -878,10 +882,6 @@
   {
     "category": "palms_ferns",
     "scientific_name": "Selaginella martensii"
-  },
-  {
-    "category": "others",
-    "scientific_name": "Hedera helix"
   },
   {
     "category": "others",

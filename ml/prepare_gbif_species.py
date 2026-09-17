@@ -61,7 +61,8 @@ def main(output, per_species, minimum):
     for species in SPECIES:
         match = request_json("species/match", {"name": species, "strict": "true"})
         if match.get("rank") != "SPECIES" or match.get("confidence", 0) < 90:
-            raise RuntimeError("Taxonomy match uncertain: " + species + " " + repr(match))
+            print("Skip uncertain taxonomy:", species, match, flush=True)
+            continue
         slug = species.lower().replace(" ", "_")
         candidates = []
         # GBIF API search pages; no images are taken without an explicit photo license.
@@ -105,12 +106,18 @@ def main(output, per_species, minimum):
             (folder / (digest + ".jpg")).write_bytes(data)
             if len(photos) >= per_species:
                 break
-        counts[slug] = len(photos)
-        attribution.extend(dict(species=species, **p) for p in photos)
         print(species, len(photos), flush=True)
         if len(photos) < minimum:
-            raise RuntimeError("Insufficient licensed photos for " + species)
+            import shutil
+            for split in ("train", "val"):
+                shutil.rmtree(output / split / slug, ignore_errors=True)
+            print("Skip insufficient licensed photos:", species, flush=True)
+            continue
+        counts[slug] = len(photos)
+        attribution.extend(dict(species=species, **p) for p in photos)
         time.sleep(0.2)
+    if len(counts) < 4:
+        raise RuntimeError("Fewer than four species have enough licensed photos")
     (output / "attribution.json").write_text(json.dumps(attribution, indent=2))
     (output / "counts.json").write_text(json.dumps(counts, indent=2))
 

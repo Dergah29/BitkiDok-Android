@@ -1,16 +1,25 @@
-# Taxonomy audit: 31 names missed by iNaturalist exact search
+# Taxonomy audit of the 200 catalog entries
 
-Audit date: 2026-09-17 UTC. [GitHub Actions run](https://github.com/Dergah29/BitkiDok-Android/actions/runs/35267693772), [machine-readable results](taxon_alias_audit_31.json). This is a taxonomy metadata audit, **not photo label validation or model training**.
+Audited 2026-09-17 UTC via [full GBIF workflow](https://github.com/Dergah29/BitkiDok-Android/actions/runs/35268209829). Full [200-record JSON report](catalog_taxonomy_audit_200.json); earlier [31 unmatched-name report](taxon_alias_audit_31.json). These are taxonomy metadata checks, **not** photo-label reviews or model evaluation.
 
-The catalog currently has 200 entries with 200 different GBIF taxon keys, but these are not proven to be 200 different accepted species. Of the 31 catalog names that had no unambiguous exact species match in the iNaturalist photo audit, GBIF marks 15 as synonyms and 16 as accepted entries. iNaturalist autocomplete suggestions have not been verified as synonym relationships.
+| Measure | Result |
+| --- | ---: |
+| Catalog entries / distinct queried GBIF keys | 200 / 200 |
+| GBIF keys successfully resolved | 200 |
+| GBIF record ranks reported as SPECIES | 200 |
+| GBIF ACCEPTED / SYNONYM statuses | 183 / 17 |
+| Distinct resolved accepted GBIF keys | **197** |
 
-At least two catalog pairs resolve to the same GBIF accepted taxon:
+Three pairs share one accepted GBIF key each:
 
-| Catalog label A | GBIF accepted key | Existing catalog label B | Interpretation |
-| --- | ---: | --- | --- |
-| Asparagus plumosus | 2768686 | Asparagus setaceus | GBIF synonym of same accepted taxon; do not count as two botanical species. |
-| Hoya compacta | 8658195 | Hoya carnosa | GBIF synonym of same accepted taxon; compacta may be a distinct horticultural form, but do not count as a second accepted species. |
+| Catalog entries | Accepted GBIF key | Review note |
+| --- | ---: | --- |
+| Asparagus setaceus / Asparagus plumosus | 2768686 | GBIF lists plumosus as a synonym of setaceus. |
+| Begonia maculata / Begonia corallina | 7303475 | GBIF lists corallina as a synonym of maculata. |
+| Hoya carnosa / Hoya compacta | 8658195 | GBIF lists compacta as a synonym of carnosa; a recognizable horticultural form may still deserve a distinct user-facing name, but not a second accepted species count. |
 
-Examples requiring label review before a photo search under the iNaturalist name: Dracaena trifasciata / Sansevieria trifasciata, Philodendron bipinnatifidum / Thaumatophyllum bipinnatifidum, Senecio rowleyanus / Curio rowleyanus. A search suggestion alone is insufficient evidence for an automatic alias. In particular, Dieffenbachia amoena / Dieffenbachia seguine should **not** be merged on autocomplete similarity.
+The 200 queried records have species rank; a synonym can resolve to an accepted infraspecific taxon (for example Philodendron micans and Saintpaulia ionantha in the 31-name report). Thus **197 distinct accepted keys does not itself prove 197 accepted species at species rank**. Before claiming 200 accepted species, inspect ranks of all accepted targets and select botanically verified replacements for duplicated or infraspecific entries. Do not silently merge labels or include a source photograph under a different label based only on iNaturalist autocomplete.
 
-Next gates: audit all 200 GBIF keys for accepted-taxon duplicates and ranks; botanically verify names; replace duplicate catalog entries with genuinely distinct species if the requirement is 200 species; license-check each photograph, verify its taxon and duplicates, then train and test on independent phone photos. The experimental model remains 101 labels, top-1 34.15% and top-3 51.33% on the earlier same-source validation; no independent phone-photo accuracy has been established. No model or app-release claim follows from this taxonomy report.
+The 31-name audit found 15 GBIF synonyms and 16 accepted entries among exact-name iNaturalist misses. Autocomplete suggestions are not synonym evidence; notably Dieffenbachia amoena / Dieffenbachia seguine cannot be merged on that basis.
+
+The experimental photo model still has 101 labels and same-source top-1 34.15% / top-3 51.33%. Photos from additional sources require image-level rights, taxon, visual and duplicate checks, then independent phone-photo evaluation. None of these taxonomy counts implies a trained 197- or 200-class model.

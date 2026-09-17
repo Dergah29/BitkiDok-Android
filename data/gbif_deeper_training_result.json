@@ -1,0 +1,815 @@
+{
+  "run_url": "https://github.com/Dergah29/BitkiDok-Android/actions/runs/35232494487",
+  "attempt": "deeper_offset_sampling",
+  "catalog_species": 200,
+  "trained_classes": 101,
+  "train_images": 1925,
+  "validation_images": 489,
+  "val_top1_accuracy": 0.3415133059024811,
+  "val_top3_accuracy": 0.5132924335378323,
+  "baseline_same_photo_counts": true,
+  "remaining_below_minimum": 99,
+  "note": "No new usable photos versus first-page collector; candidate metadata alone did not translate to new accepted images. Model did not improve and is not attached to Android.",
+  "counts": [
+    {
+      "species": "Aglaonema commutatum",
+      "usable_photos": 15
+    },
+    {
+      "species": "Aloe vera",
+      "usable_photos": 25
+    },
+    {
+      "species": "Begonia maculata",
+      "usable_photos": 25
+    },
+    {
+      "species": "Chlorophytum comosum",
+      "usable_photos": 25
+    },
+    {
+      "species": "Codiaeum variegatum",
+      "usable_photos": 25
+    },
+    {
+      "species": "Crassula ovata",
+      "usable_photos": 25
+    },
+    {
+      "species": "Dieffenbachia seguine",
+      "usable_photos": 25
+    },
+    {
+      "species": "Dracaena fragrans",
+      "usable_photos": 25
+    },
+    {
+      "species": "Epipremnum aureum",
+      "usable_photos": 25
+    },
+    {
+      "species": "Ficus benjamina",
+      "usable_photos": 25
+    },
+    {
+      "species": "Ficus elastica",
+      "usable_photos": 25
+    },
+    {
+      "species": "Hedera helix",
+      "usable_photos": 25
+    },
+    {
+      "species": "Kalanchoe blossfeldiana",
+      "usable_photos": 10
+    },
+    {
+      "species": "Monstera deliciosa",
+      "usable_photos": 25
+    },
+    {
+      "species": "Pachira aquatica",
+      "usable_photos": 25
+    },
+    {
+      "species": "Peperomia obtusifolia",
+      "usable_photos": 25
+    },
+    {
+      "species": "Philodendron hederaceum",
+      "usable_photos": 25
+    },
+    {
+      "species": "Schlumbergera truncata",
+      "usable_photos": 16
+    },
+    {
+      "species": "Spathiphyllum wallisii",
+      "usable_photos": 25
+    },
+    {
+      "species": "Syngonium podophyllum",
+      "usable_photos": 25
+    },
+    {
+      "species": "Tradescantia zebrina",
+      "usable_photos": 25
+    },
+    {
+      "species": "Monstera adansonii",
+      "usable_photos": 25
+    },
+    {
+      "species": "Monstera obliqua",
+      "usable_photos": 21
+    },
+    {
+      "species": "Monstera siltepecana",
+      "usable_photos": 25
+    },
+    {
+      "species": "Monstera dubia",
+      "usable_photos": 25
+    },
+    {
+      "species": "Rhaphidophora tetrasperma",
+      "usable_photos": 0
+    },
+    {
+      "species": "Rhaphidophora decursiva",
+      "usable_photos": 19
+    },
+    {
+      "species": "Epipremnum pinnatum",
+      "usable_photos": 25
+    },
+    {
+      "species": "Scindapsus pictus",
+      "usable_photos": 25
+    },
+    {
+      "species": "Scindapsus treubii",
+      "usable_photos": 1
+    },
+    {
+      "species": "Philodendron erubescens",
+      "usable_photos": 25
+    },
+    {
+      "species": "Philodendron bipinnatifidum",
+      "usable_photos": 0
+    },
+    {
+      "species": "Philodendron gloriosum",
+      "usable_photos": 12
+    },
+    {
+      "species": "Philodendron melanochrysum",
+      "usable_photos": 3
+    },
+    {
+      "species": "Philodendron verrucosum",
+      "usable_photos": 25
+    },
+    {
+      "species": "Philodendron micans",
+      "usable_photos": 0
+    },
+    {
+      "species": "Philodendron squamiferum",
+      "usable_photos": 23
+    },
+    {
+      "species": "Philodendron billietiae",
+      "usable_photos": 6
+    },
+    {
+      "species": "Philodendron hastatum",
+      "usable_photos": 5
+    },
+    {
+      "species": "Philodendron domesticum",
+      "usable_photos": 0
+    },
+    {
+      "species": "Philodendron pedatum",
+      "usable_photos": 25
+    },
+    {
+      "species": "Philodendron xanadu",
+      "usable_photos": 0
+    },
+    {
+      "species": "Anthurium andraeanum",
+      "usable_photos": 25
+    },
+    {
+      "species": "Anthurium crystallinum",
+      "usable_photos": 4
+    },
+    {
+      "species": "Anthurium clarinervium",
+      "usable_photos": 2
+    },
+    {
+      "species": "Anthurium magnificum",
+      "usable_photos": 0
+    },
+    {
+      "species": "Anthurium veitchii",
+      "usable_photos": 0
+    },
+    {
+      "species": "Anthurium hookeri",
+      "usable_photos": 7
+    },
+    {
+      "species": "Spathiphyllum floribundum",
+      "usable_photos": 0
+    },
+    {
+      "species": "Zamioculcas zamiifolia",
+      "usable_photos": 6
+    },
+    {
+      "species": "Alocasia amazonica",
+      "usable_photos": 0
+    },
+    {
+      "species": "Alocasia zebrina",
+      "usable_photos": 2
+    },
+    {
+      "species": "Alocasia macrorrhizos",
+      "usable_photos": 25
+    },
+    {
+      "species": "Alocasia baginda",
+      "usable_photos": 0
+    },
+    {
+      "species": "Alocasia cuprea",
+      "usable_photos": 1
+    },
+    {
+      "species": "Alocasia reginula",
+      "usable_photos": 0
+    },
+    {
+      "species": "Colocasia esculenta",
+      "usable_photos": 25
+    },
+    {
+      "species": "Caladium bicolor",
+      "usable_photos": 25
+    },
+    {
+      "species": "Syngonium erythrophyllum",
+      "usable_photos": 1
+    },
+    {
+      "species": "Aglaonema modestum",
+      "usable_photos": 0
+    },
+    {
+      "species": "Aglaonema pictum",
+      "usable_photos": 0
+    },
+    {
+      "species": "Dieffenbachia amoena",
+      "usable_photos": 0
+    },
+    {
+      "species": "Zantedeschia aethiopica",
+      "usable_photos": 25
+    },
+    {
+      "species": "Dracaena trifasciata",
+      "usable_photos": 0
+    },
+    {
+      "species": "Dracaena marginata",
+      "usable_photos": 0
+    },
+    {
+      "species": "Dracaena reflexa",
+      "usable_photos": 25
+    },
+    {
+      "species": "Dracaena sanderiana",
+      "usable_photos": 19
+    },
+    {
+      "species": "Dracaena angolensis",
+      "usable_photos": 0
+    },
+    {
+      "species": "Dracaena surculosa",
+      "usable_photos": 6
+    },
+    {
+      "species": "Dracaena braunii",
+      "usable_photos": 0
+    },
+    {
+      "species": "Dracaena elliptica",
+      "usable_photos": 1
+    },
+    {
+      "species": "Chlorophytum orchidastrum",
+      "usable_photos": 0
+    },
+    {
+      "species": "Asparagus setaceus",
+      "usable_photos": 25
+    },
+    {
+      "species": "Asparagus densiflorus",
+      "usable_photos": 25
+    },
+    {
+      "species": "Asparagus plumosus",
+      "usable_photos": 1
+    },
+    {
+      "species": "Yucca gigantea",
+      "usable_photos": 25
+    },
+    {
+      "species": "Yucca aloifolia",
+      "usable_photos": 25
+    },
+    {
+      "species": "Beaucarnea recurvata",
+      "usable_photos": 13
+    },
+    {
+      "species": "Cordyline fruticosa",
+      "usable_photos": 25
+    },
+    {
+      "species": "Cordyline australis",
+      "usable_photos": 25
+    },
+    {
+      "species": "Aspidistra elatior",
+      "usable_photos": 16
+    },
+    {
+      "species": "Aspidistra lurida",
+      "usable_photos": 0
+    },
+    {
+      "species": "Haworthiopsis attenuata",
+      "usable_photos": 0
+    },
+    {
+      "species": "Haworthiopsis fasciata",
+      "usable_photos": 0
+    },
+    {
+      "species": "Gasteria bicolor",
+      "usable_photos": 8
+    },
+    {
+      "species": "Gasteria verrucosa",
+      "usable_photos": 0
+    },
+    {
+      "species": "Aloe arborescens",
+      "usable_photos": 25
+    },
+    {
+      "species": "Aloe juvenna",
+      "usable_photos": 0
+    },
+    {
+      "species": "Aloe aristata",
+      "usable_photos": 0
+    },
+    {
+      "species": "Aloe brevifolia",
+      "usable_photos": 3
+    },
+    {
+      "species": "Crassula perforata",
+      "usable_photos": 25
+    },
+    {
+      "species": "Crassula muscosa",
+      "usable_photos": 25
+    },
+    {
+      "species": "Crassula capitella",
+      "usable_photos": 25
+    },
+    {
+      "species": "Crassula tetragona",
+      "usable_photos": 25
+    },
+    {
+      "species": "Kalanchoe tomentosa",
+      "usable_photos": 7
+    },
+    {
+      "species": "Kalanchoe daigremontiana",
+      "usable_photos": 25
+    },
+    {
+      "species": "Kalanchoe fedtschenkoi",
+      "usable_photos": 25
+    },
+    {
+      "species": "Kalanchoe beharensis",
+      "usable_photos": 20
+    },
+    {
+      "species": "Echeveria elegans",
+      "usable_photos": 2
+    },
+    {
+      "species": "Echeveria agavoides",
+      "usable_photos": 3
+    },
+    {
+      "species": "Echeveria pulidonis",
+      "usable_photos": 1
+    },
+    {
+      "species": "Echeveria lilacina",
+      "usable_photos": 1
+    },
+    {
+      "species": "Sedum morganianum",
+      "usable_photos": 0
+    },
+    {
+      "species": "Sedum rubrotinctum",
+      "usable_photos": 4
+    },
+    {
+      "species": "Sedum adolphi",
+      "usable_photos": 2
+    },
+    {
+      "species": "Graptopetalum paraguayense",
+      "usable_photos": 3
+    },
+    {
+      "species": "Pachyphytum oviferum",
+      "usable_photos": 0
+    },
+    {
+      "species": "Senecio rowleyanus",
+      "usable_photos": 0
+    },
+    {
+      "species": "Senecio radicans",
+      "usable_photos": 0
+    },
+    {
+      "species": "Curio herreanus",
+      "usable_photos": 3
+    },
+    {
+      "species": "Portulacaria afra",
+      "usable_photos": 25
+    },
+    {
+      "species": "Ceropegia woodii",
+      "usable_photos": 2
+    },
+    {
+      "species": "Lithops lesliei",
+      "usable_photos": 2
+    },
+    {
+      "species": "Schlumbergera buckleyi",
+      "usable_photos": 0
+    },
+    {
+      "species": "Schlumbergera russeliana",
+      "usable_photos": 1
+    },
+    {
+      "species": "Rhipsalis baccifera",
+      "usable_photos": 25
+    },
+    {
+      "species": "Rhipsalis cereuscula",
+      "usable_photos": 25
+    },
+    {
+      "species": "Rhipsalis pilocarpa",
+      "usable_photos": 8
+    },
+    {
+      "species": "Hatiora salicornioides",
+      "usable_photos": 0
+    },
+    {
+      "species": "Epiphyllum oxypetalum",
+      "usable_photos": 24
+    },
+    {
+      "species": "Epiphyllum anguliger",
+      "usable_photos": 0
+    },
+    {
+      "species": "Disocactus ackermannii",
+      "usable_photos": 3
+    },
+    {
+      "species": "Disocactus flagelliformis",
+      "usable_photos": 0
+    },
+    {
+      "species": "Opuntia microdasys",
+      "usable_photos": 25
+    },
+    {
+      "species": "Opuntia ficus-indica",
+      "usable_photos": 25
+    },
+    {
+      "species": "Mammillaria elongata",
+      "usable_photos": 7
+    },
+    {
+      "species": "Mammillaria hahniana",
+      "usable_photos": 2
+    },
+    {
+      "species": "Mammillaria gracilis",
+      "usable_photos": 0
+    },
+    {
+      "species": "Gymnocalycium mihanovichii",
+      "usable_photos": 1
+    },
+    {
+      "species": "Echinopsis oxygona",
+      "usable_photos": 25
+    },
+    {
+      "species": "Echinopsis chamaecereus",
+      "usable_photos": 0
+    },
+    {
+      "species": "Echinocactus grusonii",
+      "usable_photos": 0
+    },
+    {
+      "species": "Ferocactus latispinus",
+      "usable_photos": 25
+    },
+    {
+      "species": "Astrophytum myriostigma",
+      "usable_photos": 25
+    },
+    {
+      "species": "Cereus repandus",
+      "usable_photos": 25
+    },
+    {
+      "species": "Cereus jamacaru",
+      "usable_photos": 25
+    },
+    {
+      "species": "Hylocereus undatus",
+      "usable_photos": 1
+    },
+    {
+      "species": "Selenicereus grandiflorus",
+      "usable_photos": 25
+    },
+    {
+      "species": "Parodia magnifica",
+      "usable_photos": 0
+    },
+    {
+      "species": "Parodia leninghausii",
+      "usable_photos": 0
+    },
+    {
+      "species": "Rebutia minuscula",
+      "usable_photos": 10
+    },
+    {
+      "species": "Pilosocereus pachycladus",
+      "usable_photos": 15
+    },
+    {
+      "species": "Ficus lyrata",
+      "usable_photos": 6
+    },
+    {
+      "species": "Ficus microcarpa",
+      "usable_photos": 25
+    },
+    {
+      "species": "Ficus pumila",
+      "usable_photos": 25
+    },
+    {
+      "species": "Ficus benghalensis",
+      "usable_photos": 25
+    },
+    {
+      "species": "Ficus religiosa",
+      "usable_photos": 25
+    },
+    {
+      "species": "Ficus deltoidea",
+      "usable_photos": 4
+    },
+    {
+      "species": "Schefflera arboricola",
+      "usable_photos": 0
+    },
+    {
+      "species": "Heptapleurum actinophyllum",
+      "usable_photos": 25
+    },
+    {
+      "species": "Euphorbia pulcherrima",
+      "usable_photos": 25
+    },
+    {
+      "species": "Euphorbia trigona",
+      "usable_photos": 9
+    },
+    {
+      "species": "Euphorbia milii",
+      "usable_photos": 25
+    },
+    {
+      "species": "Euphorbia tirucalli",
+      "usable_photos": 25
+    },
+    {
+      "species": "Euphorbia lactea",
+      "usable_photos": 25
+    },
+    {
+      "species": "Peperomia argyreia",
+      "usable_photos": 0
+    },
+    {
+      "species": "Peperomia caperata",
+      "usable_photos": 1
+    },
+    {
+      "species": "Peperomia polybotrya",
+      "usable_photos": 0
+    },
+    {
+      "species": "Peperomia prostrata",
+      "usable_photos": 1
+    },
+    {
+      "species": "Peperomia rotundifolia",
+      "usable_photos": 25
+    },
+    {
+      "species": "Pilea peperomioides",
+      "usable_photos": 0
+    },
+    {
+      "species": "Pilea cadierei",
+      "usable_photos": 25
+    },
+    {
+      "species": "Pilea microphylla",
+      "usable_photos": 25
+    },
+    {
+      "species": "Tradescantia pallida",
+      "usable_photos": 25
+    },
+    {
+      "species": "Tradescantia fluminensis",
+      "usable_photos": 25
+    },
+    {
+      "species": "Tradescantia spathacea",
+      "usable_photos": 25
+    },
+    {
+      "species": "Callisia repens",
+      "usable_photos": 25
+    },
+    {
+      "species": "Fittonia albivenis",
+      "usable_photos": 16
+    },
+    {
+      "species": "Hypoestes phyllostachya",
+      "usable_photos": 25
+    },
+    {
+      "species": "Soleirolia soleirolii",
+      "usable_photos": 25
+    },
+    {
+      "species": "Begonia rex",
+      "usable_photos": 0
+    },
+    {
+      "species": "Begonia corallina",
+      "usable_photos": 0
+    },
+    {
+      "species": "Begonia masoniana",
+      "usable_photos": 0
+    },
+    {
+      "species": "Begonia semperflorens",
+      "usable_photos": 0
+    },
+    {
+      "species": "Saintpaulia ionantha",
+      "usable_photos": 0
+    },
+    {
+      "species": "Streptocarpus saxorum",
+      "usable_photos": 1
+    },
+    {
+      "species": "Streptocarpus rexii",
+      "usable_photos": 25
+    },
+    {
+      "species": "Gloxinia perennis",
+      "usable_photos": 19
+    },
+    {
+      "species": "Sinningia speciosa",
+      "usable_photos": 2
+    },
+    {
+      "species": "Cyclamen persicum",
+      "usable_photos": 25
+    },
+    {
+      "species": "Hibiscus rosa-sinensis",
+      "usable_photos": 25
+    },
+    {
+      "species": "Jasminum sambac",
+      "usable_photos": 11
+    },
+    {
+      "species": "Jasminum polyanthum",
+      "usable_photos": 25
+    },
+    {
+      "species": "Gardenia jasminoides",
+      "usable_photos": 25
+    },
+    {
+      "species": "Hoya carnosa",
+      "usable_photos": 25
+    },
+    {
+      "species": "Hoya pubicalyx",
+      "usable_photos": 5
+    },
+    {
+      "species": "Hoya kerrii",
+      "usable_photos": 10
+    },
+    {
+      "species": "Hoya australis",
+      "usable_photos": 25
+    },
+    {
+      "species": "Hoya linearis",
+      "usable_photos": 0
+    },
+    {
+      "species": "Hoya compacta",
+      "usable_photos": 0
+    },
+    {
+      "species": "Medinilla magnifica",
+      "usable_photos": 25
+    },
+    {
+      "species": "Clivia miniata",
+      "usable_photos": 25
+    },
+    {
+      "species": "Amaryllis belladonna",
+      "usable_photos": 25
+    },
+    {
+      "species": "Hippeastrum vittatum",
+      "usable_photos": 1
+    },
+    {
+      "species": "Chamaedorea elegans",
+      "usable_photos": 11
+    },
+    {
+      "species": "Chamaedorea seifrizii",
+      "usable_photos": 25
+    },
+    {
+      "species": "Howea forsteriana",
+      "usable_photos": 24
+    },
+    {
+      "species": "Dypsis lutescens",
+      "usable_photos": 0
+    },
+    {
+      "species": "Phoenix roebelenii",
+      "usable_photos": 17
+    },
+    {
+      "species": "Rhapis excelsa",
+      "usable_photos": 11
+    }
+  ]
+}

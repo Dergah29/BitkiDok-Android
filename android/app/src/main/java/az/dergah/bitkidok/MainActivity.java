@@ -54,7 +54,7 @@ public final class MainActivity extends Activity {
         title.setTextColor(Color.rgb(28, 94, 51));
         panel.addView(title);
         TextView note = new TextView(this);
-        note.setText("Offline foto analizi • ilkin sınaq\nYalnız pothos (money plant), sansevieria və spider plant üçün öyrədilib. Digər bitkilərdə nəticə etibarsız ola bilər.");
+        note.setText("Offline foto analizi • ilkin sınaq\n10 ev bitkisi üçün növ təxmini. Real fotolarda dəqiqlik ayrıca yoxlanmalıdır; başqa bitkilərdə nəticə səhv ola bilər.");
         note.setTextSize(16);
         note.setPadding(0, 14, 0, 20);
         panel.addView(note);
@@ -103,14 +103,60 @@ public final class MainActivity extends Activity {
             final Bitmap input = Bitmap.createScaledBitmap(photo, 224, 224, true);
             new Thread(() -> {
                 try {
-                    String answer = analyze(input);
+                    String answer = analyzeSpecies(input);
                     runOnUiThread(() -> result.setText(answer));
                 } catch (Exception e) {
-                    runOnUiThread(() -> result.setText("Model açıla bilmədi. Model faylını Android assets qovluğuna qoy: model.tflite"));
+                    runOnUiThread(() -> result.setText("Növ modeli açıla bilmədi. Son APK build-ini yoxla."));
                 }
             }).start();
         } catch (Exception ex) {
             result.setText("Şəkil oxunmadı. Başqa şəkil seç.");
+        }
+    }
+
+
+    private String analyzeSpecies(Bitmap bitmap) throws Exception {
+        File model = new File(getCacheDir(), "species.tflite");
+        if (!model.exists()) {
+            try (InputStream src = getAssets().open("species.tflite");
+                 FileOutputStream dst = new FileOutputStream(model)) {
+                byte[] block = new byte[16384];
+                int n;
+                while ((n = src.read(block)) != -1) dst.write(block, 0, n);
+            }
+        }
+        org.json.JSONArray labels;
+        try (InputStream src = getAssets().open("species-labels.json");
+             java.util.Scanner scanner = new java.util.Scanner(src, "UTF-8")) {
+            labels = new org.json.JSONArray(scanner.useDelimiter("\\A").next());
+        }
+        try (FileInputStream src = new FileInputStream(model);
+             FileChannel channel = src.getChannel();
+             Interpreter interpreter = new Interpreter(channel.map(FileChannel.MapMode.READ_ONLY, 0, channel.size()))) {
+            ByteBuffer pixels = ByteBuffer.allocateDirect(224 * 224 * 3 * 4).order(ByteOrder.nativeOrder());
+            int[] colors = new int[224 * 224];
+            bitmap.getPixels(colors, 0, 224, 0, 0, 224, 224);
+            for (int color : colors) {
+                pixels.putFloat(Color.red(color));
+                pixels.putFloat(Color.green(color));
+                pixels.putFloat(Color.blue(color));
+            }
+            pixels.rewind();
+            float[][] scores = new float[1][labels.length()];
+            interpreter.run(pixels, scores);
+            int best = 0;
+            for (int i = 1; i < labels.length(); i++) {
+                if (scores[0][i] > scores[0][best]) best = i;
+            }
+            float confidence = scores[0][best];
+            if (!Float.isFinite(confidence)) throw new IllegalStateException("Invalid model output");
+            String latin = labels.getString(best).replace('_', ' ');
+            if (confidence < 0.45f) {
+                return "Bitki növünü etibarlı müəyyən edə bilmədim. Daha aydın şəkil çək və ya bitkinin adını əl ilə seç.\\n\\nTəklif edilən növ: " + latin + " (model göstəricisi " + String.format(Locale.US, "%.0f%%", confidence * 100) + ").";
+            }
+            return "Mümkün bitki növü: " + latin
+                + "\\nModel göstəricisi: " + String.format(Locale.US, "%.0f%%", confidence * 100)
+                + "\\n\\nBu göstərici düzgün tanınma ehtimalı deyil. Model yalnız 10 növ arasında seçim edir və naməlum bitkini də bunlardan birinə aid edə bilər. Xəstəlik nəticəsi bu ekranda verilməyəcək; ayrıca təsdiq tələb edir.";
         }
     }
 

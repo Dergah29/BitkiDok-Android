@@ -1,0 +1,44 @@
+name: Verify expanded species model
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/verify-species.yml']
+permissions:
+  contents: read
+  actions: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/download-artifact@v4
+        with:
+          name: bitkidok-species-experimental
+          run-id: 35195363838
+          github-token: ${{ github.token }}
+          path: /tmp/model
+      - run: pip install 'tensorflow>=2.16,<3'
+      - name: Run on two different inputs
+        run: |
+          python - <<'PY'
+          import json, numpy as np, tensorflow as tf
+          p='/tmp/model/'
+          labels=json.load(open(p+'species-labels.json'))
+          t=tf.lite.Interpreter(model_path=p+'species.tflite')
+          t.allocate_tensors()
+          i=t.get_input_details()[0]
+          o=t.get_output_details()[0]
+          print('labels',labels,'input',i['shape'],i['dtype'],'output',o['shape'])
+          assert len(labels)==10 and list(i['shape'])==[1,224,224,3]
+          scores=[]
+          for value in (0, 255):
+              t.set_tensor(i['index'],np.full(i['shape'],value,dtype=i['dtype']))
+              t.invoke()
+              z=t.get_tensor(o['index'])[0]
+              print('score sum',float(z.sum()),'top',labels[int(z.argmax())])
+              assert np.isfinite(z).all() and abs(float(z.sum())-1)<0.02
+              scores.append(z)
+          assert np.max(np.abs(scores[0]-scores[1]))>0.001, 'Constant predictions'
+          PY

@@ -1,0 +1,33 @@
+name: Audit 200 species photo coverage
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/audit_200_coverage.py'
+      - 'data/houseplants_200.json'
+      - '.github/workflows/audit-200-coverage.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Audit licensed image metadata
+        run: python ml/audit_200_coverage.py data/houseplants_200.json /tmp/coverage-200.json
+      - name: Print coverage summary
+        if: always()
+        run: |
+          if test -f /tmp/coverage-200.json; then
+            python -c 'import json; d=json.load(open("/tmp/coverage-200.json")); print("Candidates:",d["candidate_threshold_met"],"/",d["species_total"]); print("GBIF errors:",len(d["species_with_query_errors"]))'
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coverage-200-metadata
+          path: /tmp/coverage-200.json
+          if-no-files-found: warn

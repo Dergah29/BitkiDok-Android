@@ -19,6 +19,10 @@ SPECIES = [
     "Chlorophytum comosum", "Ficus elastica", "Aloe vera",
     "Spathiphyllum wallisii", "Zamioculcas zamiifolia", "Crassula ovata",
     "Ficus benjamina", "Tradescantia zebrina", "Schlumbergera truncata",
+    "Hedera helix", "Ficus lyrata", "Dracaena fragrans",
+    "Aglaonema commutatum", "Dieffenbachia seguine", "Codiaeum variegatum",
+    "Syngonium podophyllum", "Philodendron hederaceum", "Pachira aquatica",
+    "Begonia maculata", "Kalanchoe blossfeldiana", "Peperomia obtusifolia",
 ]
 ALLOWED = {"http://creativecommons.org/publicdomain/zero/1.0/",
            "https://creativecommons.org/publicdomain/zero/1.0/",

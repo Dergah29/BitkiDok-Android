@@ -1,0 +1,26 @@
+name: Audit full catalog taxonomy
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/audit_catalog_taxonomy.py'
+      - '.github/workflows/audit-catalog-taxonomy.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Resolve all catalog GBIF taxa
+        run: python ml/audit_catalog_taxonomy.py data/houseplants_200.json /tmp/catalog_taxonomy_audit.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: catalog-taxonomy-audit
+          path: /tmp/catalog_taxonomy_audit.json
+          if-no-files-found: warn

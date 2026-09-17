@@ -1,0 +1,27 @@
+name: Validate iNaturalist candidate downloads
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/validate_inat_photos.py'
+      - '.github/workflows/validate-inat-photos.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pillow==11.3.0
+      - name: Validate decoded medium resolution photos
+        run: python ml/validate_inat_photos.py data/inat_photo_candidates_99.json /tmp/inat_downloads_99.json --max-per-species 25
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: inat-downloaded-photo-audit
+          path: /tmp/inat_downloads_99.json
+          if-no-files-found: warn

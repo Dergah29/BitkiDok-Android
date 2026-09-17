@@ -1,0 +1,616 @@
+{
+  "as_of_utc": "2026-09-17T17:55:08Z",
+  "validation_run_url": "https://github.com/Dergah29/BitkiDok-Android/actions/runs/35255435922",
+  "artifact_name": "inat-downloaded-photo-audit",
+  "source_manifest": "data/inat_photo_candidates_99.json",
+  "gap_species_checked": 99,
+  "metadata_candidate_photos": 428,
+  "medium_images_decoded_unique": 189,
+  "species_with_medium_images": 43,
+  "species_potentially_reaching_12_if_new_labels_licenses_and_duplicates_verified": 15,
+  "trained_classes_unchanged": 101,
+  "top1_unchanged": 0.3415133059024811,
+  "top3_unchanged": 0.5132924335378323,
+  "limitations": [
+    "Medium images were downloaded, decoded, and SHA-256-deduplicated among this iNaturalist candidate batch; downloaded bytes were not persisted in the repository.",
+    "Photo subject, label, license provenance at time of use and overlap with previously collected GBIF image hashes/individual plants have not been independently audited.",
+    "Sum of GBIF and iNaturalist counts can overstate distinct training examples; no new training was performed.",
+    "Same-source splits and independent phone photo evaluation remain outstanding."
+  ],
+  "rows": [
+    {
+      "species": "Kalanchoe blossfeldiana",
+      "gbif_usable_photos": 10,
+      "metadata_candidate_photos": 23,
+      "medium_images_decoded_unique": 11
+    },
+    {
+      "species": "Rhaphidophora tetrasperma",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Scindapsus treubii",
+      "gbif_usable_photos": 1,
+      "metadata_candidate_photos": 4,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Philodendron bipinnatifidum",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Philodendron melanochrysum",
+      "gbif_usable_photos": 3,
+      "metadata_candidate_photos": 4,
+      "medium_images_decoded_unique": 3
+    },
+    {
+      "species": "Philodendron micans",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Philodendron billietiae",
+      "gbif_usable_photos": 6,
+      "metadata_candidate_photos": 8,
+      "medium_images_decoded_unique": 3
+    },
+    {
+      "species": "Philodendron hastatum",
+      "gbif_usable_photos": 5,
+      "metadata_candidate_photos": 9,
+      "medium_images_decoded_unique": 3
+    },
+    {
+      "species": "Philodendron domesticum",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Philodendron xanadu",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Anthurium crystallinum",
+      "gbif_usable_photos": 4,
+      "metadata_candidate_photos": 5,
+      "medium_images_decoded_unique": 4
+    },
+    {
+      "species": "Anthurium clarinervium",
+      "gbif_usable_photos": 2,
+      "metadata_candidate_photos": 2,
+      "medium_images_decoded_unique": 2
+    },
+    {
+      "species": "Anthurium magnificum",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Anthurium veitchii",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Anthurium hookeri",
+      "gbif_usable_photos": 7,
+      "metadata_candidate_photos": 9,
+      "medium_images_decoded_unique": 7
+    },
+    {
+      "species": "Spathiphyllum floribundum",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Zamioculcas zamiifolia",
+      "gbif_usable_photos": 6,
+      "metadata_candidate_photos": 14,
+      "medium_images_decoded_unique": 6
+    },
+    {
+      "species": "Alocasia amazonica",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Alocasia zebrina",
+      "gbif_usable_photos": 2,
+      "metadata_candidate_photos": 4,
+      "medium_images_decoded_unique": 2
+    },
+    {
+      "species": "Alocasia baginda",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Alocasia cuprea",
+      "gbif_usable_photos": 1,
+      "metadata_candidate_photos": 3,
+      "medium_images_decoded_unique": 1
+    },
+    {
+      "species": "Alocasia reginula",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Syngonium erythrophyllum",
+      "gbif_usable_photos": 1,
+      "metadata_candidate_photos": 4,
+      "medium_images_decoded_unique": 1
+    },
+    {
+      "species": "Aglaonema modestum",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 5,
+      "medium_images_decoded_unique": 3
+    },
+    {
+      "species": "Aglaonema pictum",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Dieffenbachia amoena",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Dracaena trifasciata",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Dracaena marginata",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Dracaena angolensis",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Dracaena surculosa",
+      "gbif_usable_photos": 6,
+      "metadata_candidate_photos": 11,
+      "medium_images_decoded_unique": 5
+    },
+    {
+      "species": "Dracaena braunii",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Dracaena elliptica",
+      "gbif_usable_photos": 1,
+      "metadata_candidate_photos": 2,
+      "medium_images_decoded_unique": 1
+    },
+    {
+      "species": "Chlorophytum orchidastrum",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Asparagus plumosus",
+      "gbif_usable_photos": 1,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Aspidistra lurida",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Haworthiopsis attenuata",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Haworthiopsis fasciata",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Gasteria bicolor",
+      "gbif_usable_photos": 8,
+      "metadata_candidate_photos": 9,
+      "medium_images_decoded_unique": 6
+    },
+    {
+      "species": "Gasteria verrucosa",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Aloe juvenna",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Aloe aristata",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Aloe brevifolia",
+      "gbif_usable_photos": 3,
+      "metadata_candidate_photos": 1,
+      "medium_images_decoded_unique": 1
+    },
+    {
+      "species": "Kalanchoe tomentosa",
+      "gbif_usable_photos": 7,
+      "metadata_candidate_photos": 11,
+      "medium_images_decoded_unique": 7
+    },
+    {
+      "species": "Echeveria elegans",
+      "gbif_usable_photos": 2,
+      "metadata_candidate_photos": 8,
+      "medium_images_decoded_unique": 2
+    },
+    {
+      "species": "Echeveria agavoides",
+      "gbif_usable_photos": 3,
+      "metadata_candidate_photos": 22,
+      "medium_images_decoded_unique": 14
+    },
+    {
+      "species": "Echeveria pulidonis",
+      "gbif_usable_photos": 1,
+      "metadata_candidate_photos": 4,
+      "medium_images_decoded_unique": 1
+    },
+    {
+      "species": "Echeveria lilacina",
+      "gbif_usable_photos": 1,
+      "metadata_candidate_photos": 2,
+      "medium_images_decoded_unique": 1
+    },
+    {
+      "species": "Sedum morganianum",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Sedum rubrotinctum",
+      "gbif_usable_photos": 4,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Sedum adolphi",
+      "gbif_usable_photos": 2,
+      "metadata_candidate_photos": 12,
+      "medium_images_decoded_unique": 3
+    },
+    {
+      "species": "Graptopetalum paraguayense",
+      "gbif_usable_photos": 3,
+      "metadata_candidate_photos": 6,
+      "medium_images_decoded_unique": 3
+    },
+    {
+      "species": "Pachyphytum oviferum",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Senecio rowleyanus",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Senecio radicans",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Curio herreanus",
+      "gbif_usable_photos": 3,
+      "metadata_candidate_photos": 8,
+      "medium_images_decoded_unique": 3
+    },
+    {
+      "species": "Ceropegia woodii",
+      "gbif_usable_photos": 2,
+      "metadata_candidate_photos": 7,
+      "medium_images_decoded_unique": 2
+    },
+    {
+      "species": "Lithops lesliei",
+      "gbif_usable_photos": 2,
+      "metadata_candidate_photos": 3,
+      "medium_images_decoded_unique": 2
+    },
+    {
+      "species": "Schlumbergera buckleyi",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Schlumbergera russeliana",
+      "gbif_usable_photos": 1,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Rhipsalis pilocarpa",
+      "gbif_usable_photos": 8,
+      "metadata_candidate_photos": 14,
+      "medium_images_decoded_unique": 7
+    },
+    {
+      "species": "Hatiora salicornioides",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Epiphyllum anguliger",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Disocactus ackermannii",
+      "gbif_usable_photos": 3,
+      "metadata_candidate_photos": 6,
+      "medium_images_decoded_unique": 1
+    },
+    {
+      "species": "Disocactus flagelliformis",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Mammillaria elongata",
+      "gbif_usable_photos": 7,
+      "metadata_candidate_photos": 9,
+      "medium_images_decoded_unique": 7
+    },
+    {
+      "species": "Mammillaria hahniana",
+      "gbif_usable_photos": 2,
+      "metadata_candidate_photos": 5,
+      "medium_images_decoded_unique": 1
+    },
+    {
+      "species": "Mammillaria gracilis",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Gymnocalycium mihanovichii",
+      "gbif_usable_photos": 1,
+      "metadata_candidate_photos": 4,
+      "medium_images_decoded_unique": 1
+    },
+    {
+      "species": "Echinopsis chamaecereus",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Echinocactus grusonii",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Hylocereus undatus",
+      "gbif_usable_photos": 1,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Parodia magnifica",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Parodia leninghausii",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Rebutia minuscula",
+      "gbif_usable_photos": 10,
+      "metadata_candidate_photos": 46,
+      "medium_images_decoded_unique": 9
+    },
+    {
+      "species": "Ficus lyrata",
+      "gbif_usable_photos": 6,
+      "metadata_candidate_photos": 13,
+      "medium_images_decoded_unique": 6
+    },
+    {
+      "species": "Ficus deltoidea",
+      "gbif_usable_photos": 4,
+      "metadata_candidate_photos": 8,
+      "medium_images_decoded_unique": 5
+    },
+    {
+      "species": "Schefflera arboricola",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Euphorbia trigona",
+      "gbif_usable_photos": 9,
+      "metadata_candidate_photos": 9,
+      "medium_images_decoded_unique": 6
+    },
+    {
+      "species": "Peperomia argyreia",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Peperomia caperata",
+      "gbif_usable_photos": 1,
+      "metadata_candidate_photos": 1,
+      "medium_images_decoded_unique": 1
+    },
+    {
+      "species": "Peperomia polybotrya",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Peperomia prostrata",
+      "gbif_usable_photos": 1,
+      "metadata_candidate_photos": 1,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Pilea peperomioides",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Begonia rex",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Begonia corallina",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Begonia masoniana",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Begonia semperflorens",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Saintpaulia ionantha",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Streptocarpus saxorum",
+      "gbif_usable_photos": 1,
+      "metadata_candidate_photos": 3,
+      "medium_images_decoded_unique": 1
+    },
+    {
+      "species": "Sinningia speciosa",
+      "gbif_usable_photos": 2,
+      "metadata_candidate_photos": 7,
+      "medium_images_decoded_unique": 1
+    },
+    {
+      "species": "Jasminum sambac",
+      "gbif_usable_photos": 11,
+      "metadata_candidate_photos": 17,
+      "medium_images_decoded_unique": 11
+    },
+    {
+      "species": "Hoya pubicalyx",
+      "gbif_usable_photos": 5,
+      "metadata_candidate_photos": 7,
+      "medium_images_decoded_unique": 4
+    },
+    {
+      "species": "Hoya kerrii",
+      "gbif_usable_photos": 10,
+      "metadata_candidate_photos": 23,
+      "medium_images_decoded_unique": 9
+    },
+    {
+      "species": "Hoya linearis",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Hoya compacta",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Hippeastrum vittatum",
+      "gbif_usable_photos": 1,
+      "metadata_candidate_photos": 9,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Chamaedorea elegans",
+      "gbif_usable_photos": 11,
+      "metadata_candidate_photos": 23,
+      "medium_images_decoded_unique": 12
+    },
+    {
+      "species": "Dypsis lutescens",
+      "gbif_usable_photos": 0,
+      "metadata_candidate_photos": 0,
+      "medium_images_decoded_unique": 0
+    },
+    {
+      "species": "Rhapis excelsa",
+      "gbif_usable_photos": 11,
+      "metadata_candidate_photos": 23,
+      "medium_images_decoded_unique": 10
+    }
+  ]
+}

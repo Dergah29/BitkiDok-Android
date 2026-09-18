@@ -1,0 +1,22 @@
+name: Probe Pl@ntNet metadata share
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/probe_plantnet_metadata.py'
+      - '.github/workflows/probe-plantnet-metadata.yml'
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - run: python ml/probe_plantnet_metadata.py /tmp/plantnet_probe.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: plantnet-metadata-share-probe
+          path: /tmp/plantnet_probe.json
+          if-no-files-found: warn

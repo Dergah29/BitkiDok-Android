@@ -1,0 +1,25 @@
+name: Audit original indoor disease photos
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/audit-mendeley-health.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'Pillow>=10,<12'
+      - run: python ml/audit_mendeley_health_duplicates.py /tmp/health-image-audit.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: health-image-leakage-audit
+          path: /tmp/health-image-audit.json
+          if-no-files-found: warn

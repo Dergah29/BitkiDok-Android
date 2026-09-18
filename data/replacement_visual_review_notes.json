@@ -1,0 +1,23 @@
+{
+  "review_date_utc": "2026-09-18",
+  "run": "https://github.com/Dergah29/BitkiDok-Android/actions/runs/35291264522",
+  "scope": "12 medium candidate photos each for Dischidia nummularia and Monstera pinnatipartita, selected from different attribution strings first",
+  "reviewer": "AI visual first pass; not expert botanical species verification",
+  "observations": [
+    "The displayed sample is predominantly natural outdoor/tree-trunk habitat, rather than potted indoor smartphone photos. The model must be evaluated on actual indoor phone photos before claiming household-use performance.",
+    "Dischidia sample shows round epiphytic leaves on tree trunks; framing ranges from plant-dominant to small plants amid substantial bark or forest background.",
+    "Monstera sample spans juvenile small leaves, large mature split leaves, and infructescence; some photos have substantial forest/tree background rather than diagnostic plant close-ups.",
+    "One Monstera photo (577833221) centers an infructescence with surrounding foliage, not a typical user-submitted potted-leaf photo. Its exact species attribution remains unverified.",
+    "Multiple photographs by one attribution string occur among the 40 Monstera candidates (19/40); group by verified contributor/individual for any holdout."
+  ],
+  "sample_count": 24,
+  "approved_for_training": 0,
+  "remaining": [
+    "Qualified taxon-label review per photo",
+    "Independent photo rights and attribution confirmation",
+    "Perceptual/individual-level duplicate check",
+    "Indoor potted-phone dataset and group-separated validation"
+  ],
+  "photo_id_overlap_report": "https://github.com/Dergah29/BitkiDok-Android/blob/main/data/replacement_cross_source_id_audit.json",
+  "note": "The 24-image visual sample is not representative of all 105 decoded candidates. No candidate has been promoted."
+}

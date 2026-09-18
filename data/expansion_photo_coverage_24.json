@@ -1,0 +1,312 @@
+{
+  "warning": "Metadata coverage only: image files, independent identity, licensing and duplicate audits remain.",
+  "species_queried": 24,
+  "candidate_photo_count": 1582,
+  "candidate_species_at_least_12_observations": 8,
+  "results": [
+    {
+      "species": "Maranta leuconeura",
+      "inat_taxon_id": 366346,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 16,
+      "candidate_photos": 26,
+      "sample_photo_ids": [
+        708457238,
+        680423305,
+        680423394,
+        674072476,
+        659868619,
+        659868652,
+        659868701,
+        659868968
+      ]
+    },
+    {
+      "species": "Goeppertia orbifolia",
+      "inat_taxon_id": 866988,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 0,
+      "candidate_photos": 0,
+      "sample_photo_ids": []
+    },
+    {
+      "species": "Goeppertia makoyana",
+      "inat_taxon_id": 1172810,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 0,
+      "candidate_photos": 0,
+      "sample_photo_ids": []
+    },
+    {
+      "species": "Goeppertia insignis",
+      "inat_taxon_id": 867364,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 1,
+      "candidate_photos": 3,
+      "sample_photo_ids": [
+        664072566,
+        664072609,
+        664072785
+      ]
+    },
+    {
+      "species": "Goeppertia ornata",
+      "inat_taxon_id": 930131,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 0,
+      "candidate_photos": 0,
+      "sample_photo_ids": []
+    },
+    {
+      "species": "Goeppertia roseopicta",
+      "inat_taxon_id": 1154562,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 11,
+      "candidate_photos": 17,
+      "sample_photo_ids": [
+        705832439,
+        705832472,
+        470562108,
+        463823510,
+        310885823,
+        248285109,
+        620649868,
+        170465997
+      ]
+    },
+    {
+      "species": "Goeppertia zebrina",
+      "inat_taxon_id": 1172861,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 37,
+      "candidate_photos": 60,
+      "sample_photo_ids": [
+        721798527,
+        659834080,
+        659834115,
+        659834169,
+        659834218,
+        619636853,
+        599761860,
+        599761865
+      ]
+    },
+    {
+      "species": "Stromanthe sanguinea",
+      "inat_taxon_id": null,
+      "status": "no_unambiguous_exact_species_match",
+      "candidate_observations": 0,
+      "candidate_photos": 0,
+      "sample_photo_ids": []
+    },
+    {
+      "species": "Ctenanthe burle-marxii",
+      "inat_taxon_id": 480528,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 1,
+      "candidate_photos": 1,
+      "sample_photo_ids": [
+        722449231
+      ]
+    },
+    {
+      "species": "Ctenanthe lubbersiana",
+      "inat_taxon_id": 427407,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 1,
+      "candidate_photos": 2,
+      "sample_photo_ids": [
+        662964010,
+        662964018
+      ]
+    },
+    {
+      "species": "Nephrolepis exaltata",
+      "inat_taxon_id": 130866,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 31,
+      "candidate_photos": 77,
+      "sample_photo_ids": [
+        717330820,
+        717330926,
+        717331003,
+        639838034,
+        625907988,
+        625907986,
+        625907987,
+        625907989
+      ]
+    },
+    {
+      "species": "Asplenium nidus",
+      "inat_taxon_id": 84356,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 200,
+      "candidate_photos": 397,
+      "sample_photo_ids": [
+        722364152,
+        703674896,
+        703298010,
+        695561673,
+        695561751,
+        695561738,
+        695561710,
+        695561609
+      ]
+    },
+    {
+      "species": "Platycerium bifurcatum",
+      "inat_taxon_id": 133619,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 200,
+      "candidate_photos": 282,
+      "sample_photo_ids": [
+        734187443,
+        734187469,
+        734187474,
+        733926633,
+        733926632,
+        733926654,
+        733928693,
+        733924602
+      ]
+    },
+    {
+      "species": "Davallia fejeensis",
+      "inat_taxon_id": 354683,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 63,
+      "candidate_photos": 99,
+      "sample_photo_ids": [
+        683641849,
+        683641868,
+        683641847,
+        622195540,
+        622195538,
+        618293626,
+        617686941,
+        617686977
+      ]
+    },
+    {
+      "species": "Phlebodium aureum",
+      "inat_taxon_id": 127908,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 200,
+      "candidate_photos": 312,
+      "sample_photo_ids": [
+        732363985,
+        726765925,
+        725572057,
+        722155032,
+        717041609,
+        716116357,
+        715248276,
+        715248284
+      ]
+    },
+    {
+      "species": "Alocasia odora",
+      "inat_taxon_id": 362126,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 200,
+      "candidate_photos": 286,
+      "sample_photo_ids": [
+        735416333,
+        735416305,
+        735416328,
+        735416308,
+        729427619,
+        724060807,
+        712080019,
+        707927452
+      ]
+    },
+    {
+      "species": "Alocasia lauterbachiana",
+      "inat_taxon_id": 1063723,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 0,
+      "candidate_photos": 0,
+      "sample_photo_ids": []
+    },
+    {
+      "species": "Alocasia sinuata",
+      "inat_taxon_id": 435465,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 0,
+      "candidate_photos": 0,
+      "sample_photo_ids": []
+    },
+    {
+      "species": "Monstera standleyana",
+      "inat_taxon_id": 777170,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 3,
+      "candidate_photos": 5,
+      "sample_photo_ids": [
+        357440649,
+        357440595,
+        191833623,
+        191833755,
+        50513404
+      ]
+    },
+    {
+      "species": "Anthurium warocqueanum",
+      "inat_taxon_id": 639000,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 1,
+      "candidate_photos": 1,
+      "sample_photo_ids": [
+        581961678
+      ]
+    },
+    {
+      "species": "Anthurium forgetii",
+      "inat_taxon_id": 849409,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 0,
+      "candidate_photos": 0,
+      "sample_photo_ids": []
+    },
+    {
+      "species": "Peperomia ferreyrae",
+      "inat_taxon_id": 982174,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 2,
+      "candidate_photos": 4,
+      "sample_photo_ids": [
+        560049996,
+        560050117,
+        148110534,
+        148110578
+      ]
+    },
+    {
+      "species": "Begonia pavonina",
+      "inat_taxon_id": 1218530,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 1,
+      "candidate_photos": 10,
+      "sample_photo_ids": [
+        620412235,
+        620534448,
+        620534468,
+        620534482,
+        620534508,
+        620534522,
+        620576139,
+        620576186
+      ]
+    },
+    {
+      "species": "Dischidia ruscifolia",
+      "inat_taxon_id": 430952,
+      "status": "metadata_candidates_only",
+      "candidate_observations": 0,
+      "candidate_photos": 0,
+      "sample_photo_ids": []
+    }
+  ]
+}

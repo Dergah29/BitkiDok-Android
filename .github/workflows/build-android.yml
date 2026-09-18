@@ -32,12 +32,25 @@ jobs:
           run-id: 35203022732
           github-token: ${{ github.token }}
           path: android/app/src/main/assets
+      - uses: actions/download-artifact@v4
+        with:
+          name: bitkidok-catalog-v2-experiment
+          run-id: 35232494487
+          github-token: ${{ github.token }}
+          path: android/app/src/main/catalog-experiment
+      - name: Stage expanded experiment separately
+        run: |
+          cp android/app/src/main/catalog-experiment/species.tflite android/app/src/main/assets/catalog-species.tflite
+          cp android/app/src/main/catalog-experiment/species-labels.json android/app/src/main/assets/catalog-species-labels.json
+          test "$(jq length android/app/src/main/assets/catalog-species-labels.json)" -eq 101
       - name: Check model inputs
         run: |
           test -s android/app/src/main/assets/model.tflite
           test -s android/app/src/main/assets/labels.json
           test -s android/app/src/main/assets/species.tflite
           test -s android/app/src/main/assets/species-labels.json
+          test -s android/app/src/main/assets/catalog-species.tflite
+          test -s android/app/src/main/assets/catalog-species-labels.json
       - name: Build debug APK
         working-directory: android
         run: gradle --no-daemon :app:assembleDebug

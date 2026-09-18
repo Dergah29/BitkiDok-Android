@@ -1,0 +1,39 @@
+{
+  "as_of_utc": "2026-09-18",
+  "scope": "iNaturalist ID overlap across three documented manifest sets only",
+  "sources": [
+    "data/inat_photo_candidates_99.json",
+    "data/expansion_download_validation_24.json",
+    "data/replacement_download_validation_11.json"
+  ],
+  "rows": [
+    {
+      "source": "data/inat_photo_candidates_99.json",
+      "records": 428,
+      "distinct_photo_ids": 428,
+      "distinct_observation_ids": 217
+    },
+    {
+      "source": "data/expansion_download_validation_24.json",
+      "records": 172,
+      "distinct_photo_ids": 172,
+      "distinct_observation_ids": 172
+    },
+    {
+      "source": "data/replacement_download_validation_11.json",
+      "records": 105,
+      "distinct_photo_ids": 105,
+      "distinct_observation_ids": 105
+    }
+  ],
+  "combined_unique_photo_ids": 705,
+  "shared_photo_ids": [],
+  "shared_observations_across_sources": [],
+  "limitations": [
+    "The 99-gap manifest has metadata candidates, whereas the other two contain downloaded/decoded candidates. Counts are not additive approved training photos.",
+    "Observation IDs in the 99-gap manifest repeat within one source when multiple photos come from an observation.",
+    "This is exact ID matching and does not detect transformed/reposted images, same individual plant, attribution or licensing changes.",
+    "Earlier GBIF manifest comparison is reported separately; no new GBIF cross-check here.",
+    "No label, visual domain, or independent phone-photo audit is implied."
+  ]
+}

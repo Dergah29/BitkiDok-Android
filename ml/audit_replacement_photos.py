@@ -11,6 +11,12 @@ def audit(source_path, out_path):
     source = json.loads(Path(source_path).read_text(encoding="utf-8"))
     rows = []
     for row in source["candidates"]:
+        gbif = row.get("gbif_accepted") or {}
+        match = row.get("gbif_match") or {}
+        if (gbif.get("rank") != "SPECIES" or gbif.get("taxonomicStatus") != "ACCEPTED"
+                or match.get("already_in_catalog_accepted_keys")
+                or match.get("already_in_previous_candidate_keys")):
+            continue
         name = row["requested_name"]
         exact = row["inat_exact_species"] or []
         item = {"species": name, "inat_taxon_id": exact[0]["id"] if len(exact) == 1 else None,

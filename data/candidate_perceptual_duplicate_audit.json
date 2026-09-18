@@ -1,0 +1,63 @@
+{
+  "as_of_utc": "2026-09-18",
+  "run": "https://github.com/Dergah29/BitkiDok-Android/actions/runs/35312741565",
+  "artifact": "candidate-similarity-audit",
+  "inputs": [
+    "data/replacement_download_validation_11.json",
+    "data/expansion_download_validation_24.json"
+  ],
+  "method": "Fetched and decoded all 277 medium images again, verified the SHA-256 of each against the manifest, computed 64-bit horizontal dHash, and flagged Hamming distance <=4.",
+  "photos_checked": 277,
+  "download_or_sha_failures": 0,
+  "flagged_pairs": 3,
+  "cross_species_pairs": 0,
+  "pairs": [
+    {
+      "photo_ids": [
+        405551666,
+        393724370
+      ],
+      "observation_ids": [
+        228534999,
+        222279581
+      ],
+      "species": "Goeppertia zebrina",
+      "distance": 0,
+      "shared_attribution": "Cricket Raspet"
+    },
+    {
+      "photo_ids": [
+        485249050,
+        50513127
+      ],
+      "observation_ids": [
+        269855925,
+        32219674
+      ],
+      "species": "Monstera pinnatipartita",
+      "distance": 0,
+      "shared_attribution": "Letizia Weichgrebe"
+    },
+    {
+      "photo_ids": [
+        485249788,
+        66822041
+      ],
+      "observation_ids": [
+        269855939,
+        42102163
+      ],
+      "species": "Monstera pinnatipartita",
+      "distance": 2,
+      "shared_attribution": "Letizia Weichgrebe"
+    }
+  ],
+  "assessment": "These are review candidates, not proven duplicate frames or the same individual plant. All three pairs have different observation IDs but matching attribution within each pair, so observation-ID-only splitting is unsafe. The shared attribution is from photo metadata, not a verified account ID.",
+  "limitations": [
+    "A 64-bit difference hash can miss crops, flips and large edits and falsely flag similar leaf patterns.",
+    "GBIF/base image bytes and the 99-gap candidate bytes were not included in this run.",
+    "Botanical identity, current photo-license status, indoor relevance and independent smartphone test have not been certified.",
+    "No candidate photos admitted to training."
+  ],
+  "trained_classes_unchanged": 101
+}

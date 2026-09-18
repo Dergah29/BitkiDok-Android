@@ -1,0 +1,24 @@
+{
+  "audited_utc": "2026-09-18",
+  "replacement_report": "https://github.com/Dergah29/BitkiDok-Android/blob/main/data/replacement_download_validation_11.json",
+  "gbif_model_artifact": "https://github.com/Dergah29/BitkiDok-Android/actions/runs/35232494487",
+  "baseline_attribution_entries": 2384,
+  "baseline_unique_inaturalist_photo_ids": 2384,
+  "replacement_decoded_medium_photos": 105,
+  "replacement_unique_photo_ids": 105,
+  "same_inaturalist_photo_id_overlap": 0,
+  "within_replacement_medium_byte_sha256_duplicates": 0,
+  "photographer_note": "Photographer field may be a generic attribution string such as 'no rights reserved' and cannot establish unique individuals or photographers.",
+  "monstera_pinnatipartita": {
+    "photos": 40,
+    "most_frequent_attribution": "(c) Letizia Weichgrebe, some rights reserved (CC BY)",
+    "photos_with_this_attribution": 19
+  },
+  "method": "Extract /photos/{id}/ from GBIF attribution.json URL, compare against photo_id from replacement download report; validator deduplicates medium image bytes within replacement batch. Baseline SHA-256 refers to original images and candidate SHA-256 to medium images, so their hashes must not be compared as if same-resolution.",
+  "limitations": [
+    "No photo_id overlap only excludes identical iNaturalist uploads, not different crops or photos of the same plant.",
+    "No cross-source perceptual/image-content duplicate check was run.",
+    "No botanical identity or visual framing approval.",
+    "Attribution grouping is not a verified photographer identity or independent plant grouping."
+  ]
+}

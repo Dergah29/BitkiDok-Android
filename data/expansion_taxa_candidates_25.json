@@ -1,0 +1,654 @@
+{
+  "warning": "Metadata and botanical candidates only, no commercially licensed photo count or approved training class.",
+  "sources": [
+    "https://api.gbif.org/v1/species/match",
+    "https://api.inaturalist.org/v1/taxa/autocomplete"
+  ],
+  "candidates": [
+    {
+      "requested_name": "Maranta leuconeura",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Maranta leuconeura É.Morren",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 2761337,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 366346,
+          "observations_count": 4011
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Maranta leuconeura É.Morren",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Goeppertia orbifolia",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Goeppertia orbifolia (Linden) Borchs. & S.Suárez",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 7476815,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 866988,
+          "observations_count": 270
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Goeppertia orbifolia (Linden) Borchs. & S.Suárez",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Goeppertia makoyana",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Goeppertia makoyana (É.Morren) Borchs. & S.Suárez",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 7708211,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 1172810,
+          "observations_count": 1775
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Goeppertia makoyana (É.Morren) Borchs. & S.Suárez",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Goeppertia insignis",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Goeppertia insignis (W.Bull ex W.E.Marshall) J.M.A.Braga, L.J.T.Cardoso & R.Couto",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 11035519,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 867364,
+          "observations_count": 1965
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Goeppertia insignis (W.Bull ex W.E.Marshall) J.M.A.Braga, L.J.T.Cardoso & R.Couto",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Goeppertia ornata",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Goeppertia ornata (Linden) Borchs. & S.Suárez",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 7977204,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 930131,
+          "observations_count": 0
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Goeppertia ornata (Linden) Borchs. & S.Suárez",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Goeppertia roseopicta",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Goeppertia roseopicta (Linden ex Lem.) Borchs. & S.Suárez",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 8023661,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 1154562,
+          "observations_count": 793
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Goeppertia roseopicta (Linden ex Lem.) Borchs. & S.Suárez",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Goeppertia zebrina",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Goeppertia zebrina (Sims) Nees",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 5302914,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 1172861,
+          "observations_count": 2423
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Goeppertia zebrina (Sims) Nees",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Stromanthe sanguinea",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Stromanthe sanguinea Sond.",
+        "rank": "SPECIES",
+        "status": "SYNONYM",
+        "key": 2761259,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Stromanthe thalia (Vell.) J.M.A.Braga",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Ctenanthe burle-marxii",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Ctenanthe burle-marxii H.Kenn.",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 2762406,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 480528,
+          "observations_count": 848
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Ctenanthe burle-marxii H.Kenn.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Ctenanthe lubbersiana",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 98,
+        "scientificName": "Ctenanthe lubbersiana (É.Morren) Eichler ex Petersen",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 2762435,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 427407,
+          "observations_count": 78
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Ctenanthe lubbersiana (É.Morren) Eichler ex Petersen",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Nephrolepis exaltata",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Nephrolepis exaltata (L.) Schott",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 2650927,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 130866,
+          "observations_count": 11198
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Nephrolepis exaltata (L.) Schott",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Asplenium nidus",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 98,
+        "scientificName": "Asplenium nidus L.",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 2650676,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 84356,
+          "observations_count": 10293
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Asplenium nidus L.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Platycerium bifurcatum",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Platycerium bifurcatum (Cav.) C.Chr.",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 7126767,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 133619,
+          "observations_count": 9547
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Platycerium bifurcatum (Cav.) C.Chr.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Davallia fejeensis",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Davallia fejeensis Hook.",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 4204670,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 354683,
+          "observations_count": 680
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Davallia fejeensis Hook.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Phlebodium aureum",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Phlebodium aureum (L.) J.Sm.",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 2650479,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 127908,
+          "observations_count": 9581
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Phlebodium aureum (L.) J.Sm.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Alocasia odora",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Alocasia odora (G.Lodd.) Spach",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 9506227,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 362126,
+          "observations_count": 19994
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Alocasia odora (G.Lodd.) Spach",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Alocasia lauterbachiana",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Alocasia lauterbachiana (Engl.) A.Hay",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 5329877,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 1063723,
+          "observations_count": 20
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Alocasia lauterbachiana (Engl.) A.Hay",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Alocasia sinuata",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Alocasia sinuata N.E.Br.",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 5329859,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 435465,
+          "observations_count": 9
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Alocasia sinuata N.E.Br.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Monstera standleyana",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Monstera standleyana G.S.Bunting",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 2868231,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 777170,
+          "observations_count": 59
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Monstera standleyana G.S.Bunting",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Anthurium warocqueanum",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Anthurium warocqueanum T.Moore",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 2873559,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 639000,
+          "observations_count": 54
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Anthurium warocqueanum T.Moore",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Anthurium forgetii",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Anthurium forgetii N.E.Br.",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 2873656,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 849409,
+          "observations_count": 12
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Anthurium forgetii N.E.Br.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Peperomia ferreyrae",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Peperomia ferreyrae Yunck.",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 4186501,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 982174,
+          "observations_count": 138
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Peperomia ferreyrae Yunck.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Pilea involucrata",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "HIGHERRANK",
+        "confidence": 98,
+        "scientificName": "Pilea Lindl.",
+        "rank": "GENUS",
+        "status": "ACCEPTED",
+        "key": 2984417,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 426421,
+          "observations_count": 107
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Pilea Lindl.",
+        "rank": "GENUS",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Begonia pavonina",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 99,
+        "scientificName": "Begonia pavonina Ridl.",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 4158827,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 1218530,
+          "observations_count": 14
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Begonia pavonina Ridl.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    },
+    {
+      "requested_name": "Dischidia ruscifolia",
+      "already_named": false,
+      "gbif_match": {
+        "matchType": "EXACT",
+        "confidence": 98,
+        "scientificName": "Dischidia ruscifolia Decne. ex Becc.",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "key": 7656154,
+        "already_in_catalog_accepted_keys": false,
+        "already_in_previous_candidate_keys": false
+      },
+      "inat_exact_species": [
+        {
+          "id": 430952,
+          "observations_count": 85
+        }
+      ],
+      "errors": [],
+      "gbif_accepted": {
+        "scientificName": "Dischidia ruscifolia Decne. ex Becc.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "ACCEPTED"
+      }
+    }
+  ]
+}

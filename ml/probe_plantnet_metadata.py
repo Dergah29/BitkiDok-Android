@@ -2,6 +2,7 @@
 import json
 import re
 import urllib.request
+import urllib.parse
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -23,7 +24,7 @@ def audit(output):
         with urllib.request.urlopen(request, timeout=25) as response:
             page = response.read(150_000).decode("utf-8", errors="replace")
             report["status"] = response.status
-            report["redirected_host"] = urllib.request.urlparse(response.geturl()).hostname
+            report["redirected_host"] = urllib.parse.urlparse(response.geturl()).hostname
             for name in ("plantnet300K_metadata.json", "plantnet300K_species_id_2_name.json",
                          "class_idx_to_species_id.json"):
                 if name in page:

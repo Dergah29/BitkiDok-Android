@@ -11,13 +11,13 @@ from validate_inat_photos import NoRedirect, medium_url
 PRIORITY = ("Dischidia nummularia", "Monstera pinnatipartita")
 
 
-def build(source, directory):
+def build(source, directory, min_photos=0):
     report = json.loads(Path(source).read_text(encoding="utf-8"))
     directory.mkdir(parents=True, exist_ok=True)
     opener = urllib.request.build_opener(NoRedirect)
     manifest = []
     for row in report["results"]:
-        if row["species"] not in PRIORITY:
+        if len(row["validated_photos"]) < min_photos or (not min_photos and row["species"] not in PRIORITY):
             continue
         images = row["validated_photos"]
         # Take one photo per attribution bucket first, then fill remaining slots.
@@ -66,5 +66,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("source", type=Path)
     parser.add_argument("out", type=Path)
+    parser.add_argument("--min-photos", type=int, default=0, help="Include all taxa with at least this many decoded photos; zero keeps legacy priority taxa.")
     args = parser.parse_args()
-    build(args.source, args.out)
+    build(args.source, args.out, args.min_photos)

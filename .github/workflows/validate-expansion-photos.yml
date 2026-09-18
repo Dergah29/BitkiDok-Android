@@ -1,0 +1,28 @@
+name: Validate expansion photo downloads
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/validate-expansion-photos.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'Pillow>=10,<12'
+      - name: Refresh photo-specific license candidates
+        run: python ml/audit_replacement_photos.py data/expansion_taxa_candidates_25.json /tmp/expansion_photo_candidates_full.json
+      - name: Download and validate distinct observation images
+        run: python ml/validate_replacement_photos.py /tmp/expansion_photo_candidates_full.json /tmp/expansion_download_validation.json --max-per-species 20
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: expansion-photo-validation
+          path: /tmp/expansion_download_validation.json
+          if-no-files-found: warn

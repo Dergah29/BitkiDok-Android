@@ -1,0 +1,9 @@
+# Pl@ntNet-300K source assessment (2026-09-18 UTC)
+
+- [Official repository](https://github.com/plantnet/PlantNet-300K) describes 306,146 images covering 1,081 species, long-tailed class counts, and a metadata-only link. The repo BSD-2-Clause license covers the repository's code; **it is not evidence that each third-party photograph may be used commercially**.
+- The [Zenodo v1.1 record](https://zenodo.org/records/5645731) distributes a 31.7 GB archive. Its visible Rights section does not present a blanket photograph license. Do not fetch this archive simply to test name coverage.
+- The repository says `plantnet300K_metadata.json` maps image IDs to species, split, author and license, and `plantnet300K_species_id_2_name.json` maps species IDs to scientific names. Their actual contents are needed to establish the intersection with BitkiDok's 200 names and count **photo-specific** commercially usable candidates.
+- A read-only HTML [metadata-share probe](https://github.com/Dergah29/BitkiDok-Android/actions/runs/35292149363) reached a 200 response redirected to `seafile.plantnet.org`; the initial HTML did not expose the three JSON filenames or direct download links. It did not list directory contents, obtain metadata, or download images.
+- Consequently the intersection of Pl@ntNet-300K and the BitkiDok catalog is **unknown**, and **zero Pl@ntNet images have been authorized or added to training**. Any future matching must resolve botanical synonyms carefully and inspect per-photo license and attribution requirements before use.
+
+Next: locate an accessible official metadata-only endpoint or obtain permission/metadata from Pl@ntNet maintainers; compare species identities and per-image rights before downloading photos. Independent potted-phone images and an external test set remain necessary.

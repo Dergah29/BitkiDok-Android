@@ -1,0 +1,28 @@
+name: Audit expansion photo licenses
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/audit-expansion-photos.yml'
+      - 'ml/summarize_expansion_photos.py'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python ml/audit_replacement_photos.py data/expansion_taxa_candidates_25.json /tmp/expansion_photo_candidates_full.json
+      - run: python ml/summarize_expansion_photos.py /tmp/expansion_photo_candidates_full.json /tmp/expansion_photo_coverage_summary.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: expansion-photo-license-metadata
+          path: |
+            /tmp/expansion_photo_candidates_full.json
+            /tmp/expansion_photo_coverage_summary.json
+          if-no-files-found: warn

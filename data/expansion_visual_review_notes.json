@@ -1,0 +1,50 @@
+{
+  "as_of_utc": "2026-09-18",
+  "review_run": "https://github.com/Dergah29/BitkiDok-Android/actions/runs/35304363200",
+  "artifact": "expansion-review-sheets",
+  "scope": "Eight contact sheets, up to 12 attribution-diverse photos each (96 positions). Visual sample only; no botanist certification, no full 172-photo audit.",
+  "species_review": [
+    {
+      "species": "Maranta leuconeura",
+      "note": "Mostly wild/groundcover examples; some leaf close-ups, no representative indoor potted series."
+    },
+    {
+      "species": "Goeppertia zebrina",
+      "note": "Outdoor garden/ground observations dominate; some leaf close-ups, few apparent indoor pots."
+    },
+    {
+      "species": "Nephrolepis exaltata",
+      "note": "Forest, tree and outdoor ground examples dominate; one apparent indoor pot in selected sheet."
+    },
+    {
+      "species": "Asplenium nidus",
+      "note": "Epiphytic forest/tree and outdoor garden subjects dominate selected sample."
+    },
+    {
+      "species": "Platycerium bifurcatum",
+      "note": "Many tree-mounted outdoor subjects, including distant trees with small plant area; indoor pot domain absent."
+    },
+    {
+      "species": "Davallia fejeensis",
+      "note": "Outdoor roof/beam and nearby vegetation repeatedly visible; attribution metadata also shows 16/20 photos with same CC-BY credit, so individual-plant leakage plausible."
+    },
+    {
+      "species": "Phlebodium aureum",
+      "note": "Forest/tree epiphytes and close-up fronds dominate; not potted-room phone domain."
+    },
+    {
+      "species": "Alocasia odora",
+      "note": "Large outdoor ground-grown plants dominate; ambiguous overlap with visually similar aroid taxa needs botanical verification."
+    }
+  ],
+  "interpretation": "Selected photos cannot establish indoor-potted identification accuracy or independent plant identity. Wild habitat and repetitive settings are risk indicators, not definitive mislabel determinations.",
+  "gates": [
+    "Verify current license and credit on each photo page and store attribution plus source URL.",
+    "Obtain botanical expert label confirmation; block ambiguous aroids/ferns.",
+    "Review all images and identify individual plants/location, not merely observation IDs.",
+    "Compute perceptual duplicates and cross-source overlap using actual image bytes.",
+    "Create dedicated consented indoor potted smartphone-photo test set separated by plant/photographer/site; do not score on candidates used for training."
+  ],
+  "approved_training_photos": 0,
+  "trained_classes_unchanged": 101
+}

@@ -40,6 +40,8 @@ public final class MainActivity extends Activity {
     private TextView result;
     private ImageView preview;
     private LinearLayout panel;
+    private boolean expandedSpecies = false;
+    private Bitmap lastInput;
 
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
@@ -54,7 +56,34 @@ public final class MainActivity extends Activity {
         title.setTextColor(Color.rgb(28, 94, 51));
         panel.addView(title);
         TextView note = new TextView(this);
-        note.setText("Offline foto analizi • ilkin sınaq\n21 ev bitkisi üçün növ təxmini. Real fotolarda dəqiqlik ayrıca yoxlanmalıdır; başqa bitkilərdə nəticə səhv ola bilər.");
+        note.setText("Offline foto analizi • ilkin sınaq\n21 növlük əsas sınaq, ayrıca 101 növlük geniş sınaq. Geniş modelin eyni mənbəli yoxlamada ilk seçim dəqiqliyi 34%-dir; real telefon fotolarında təsdiqlənməyib.");
+        Button mode = new Button(this);
+        mode.setText("Geniş 101 növ sınağını aç");
+        mode.setOnClickListener(v -> {
+            expandedSpecies = !expandedSpecies;
+            mode.setText(expandedSpecies ? "21 növlük əsas sınağa qayıt" : "Geniş 101 növ sınağını aç");
+            result.setText(expandedSpecies ? "101 növ sınağı aktivdir. Nəticələr çox vaxt səhv ola bilər; tanıma sübutu sayılmır." : "21 növlük sınaq aktivdir.");
+        });
+        panel.addView(mode);
+        Button condition = new Button(this);
+        condition.setText("Yarpaq vəziyyəti • yalnız 3 bitki üçün sınaq");
+        condition.setOnClickListener(v -> {
+            if (lastInput == null) { result.setText("Əvvəl şəkil seç və ya çək."); return; }
+            final String[] plants = {"Pothos / money plant", "Sansevieria / snake plant", "Spider plant"};
+            new android.app.AlertDialog.Builder(this).setTitle("Şəkildəki bitkini özün seç (yalnız sınaq)")
+                .setItems(plants, (dialog, which) -> {
+                    result.setText("Vəziyyət sinfi yoxlanılır...");
+                    final Bitmap image = lastInput;
+                    new Thread(() -> {
+                        try { String answer = analyzeCondition(image, which);
+                            runOnUiThread(() -> result.setText(answer));
+                        } catch (Exception ex) {
+                            runOnUiThread(() -> result.setText("Vəziyyət modeli açıla bilmədi."));
+                        }
+                    }).start();
+                }).show();
+        });
+        panel.addView(condition);
         note.setTextSize(16);
         note.setPadding(0, 14, 0, 20);
         panel.addView(note);
@@ -101,9 +130,11 @@ public final class MainActivity extends Activity {
             preview.setImageBitmap(photo);
             result.setText("Təhlil edilir...");
             final Bitmap input = Bitmap.createScaledBitmap(photo, 224, 224, true);
+            lastInput = input;
+            final boolean useExpanded = expandedSpecies;
             new Thread(() -> {
                 try {
-                    String answer = analyzeSpecies(input);
+                    String answer = analyzeSpecies(input, useExpanded);
                     runOnUiThread(() -> result.setText(answer));
                 } catch (Exception e) {
                     runOnUiThread(() -> result.setText("Növ modeli açıla bilmədi. Son APK build-ini yoxla."));
@@ -115,10 +146,12 @@ public final class MainActivity extends Activity {
     }
 
 
-    private String analyzeSpecies(Bitmap bitmap) throws Exception {
-        File model = new File(getCacheDir(), "species.tflite");
+    private String analyzeSpecies(Bitmap bitmap, boolean expanded) throws Exception {
+        String modelAsset = expanded ? "catalog-species.tflite" : "species.tflite";
+        String labelsAsset = expanded ? "catalog-species-labels.json" : "species-labels.json";
+        File model = new File(getCacheDir(), modelAsset);
         if (!model.exists()) {
-            try (InputStream src = getAssets().open("species.tflite");
+            try (InputStream src = getAssets().open(modelAsset);
                  FileOutputStream dst = new FileOutputStream(model)) {
                 byte[] block = new byte[16384];
                 int n;
@@ -126,7 +159,7 @@ public final class MainActivity extends Activity {
             }
         }
         org.json.JSONArray labels;
-        try (InputStream src = getAssets().open("species-labels.json");
+        try (InputStream src = getAssets().open(labelsAsset);
              java.util.Scanner scanner = new java.util.Scanner(src, "UTF-8")) {
             labels = new org.json.JSONArray(scanner.useDelimiter("\\A").next());
         }
@@ -159,16 +192,18 @@ public final class MainActivity extends Activity {
                 choices.append("\n").append(i + 1).append(". ")
                        .append(labels.getString(order[i]).replace('_', ' '));
             }
-            if (confidence < 0.45f) {
-                return "Bitki növünü etibarlı müəyyən edə bilmədim. Daha aydın şəkil çək.\nTəklif edilən 3 növ:" + choices;
+            if (confidence < (expanded ? 0.70f : 0.45f)) {
+                return "Növü etibarlı müəyyən edə bilmədim. Bunlar yalnız mümkün variantlardır:" + choices
+                    + (expanded ? "\n101 növlük sınaq: ilk seçim dəqiqliyi daxili yoxlamada 34% olub." : "");
             }
             return "Mümkün bitki növləri:" + choices
                 + "\n\nİlk seçim üçün model göstəricisi: " + String.format(Locale.US, "%.0f%%", confidence * 100)
-                + "\nBu göstərici düzgün tanınma ehtimalı deyil. Model yalnız 21 növ arasında seçim edir və naməlum bitkini də bunlardan birinə aid edə bilər. Xəstəlik nəticəsi bu ekranda verilmir.";
+                + "\nBu göstərici düzgün tanınma ehtimalı deyil. Model yalnız " + (expanded ? "101" : "21") + " növ arasında seçim edir; naməlum bitkini də bunlardan birinə aid edə bilər."
+                + (expanded ? "\nGeniş sınağın daxili ilk seçim dəqiqliyi 34%-dir. Telefon fotolarında hələ təsdiqlənməyib." : "");
         }
     }
 
-    private String analyze(Bitmap bitmap) throws Exception {
+    private String analyzeCondition(Bitmap bitmap, int selectedPlant) throws Exception {
         File model = new File(getCacheDir(), "model.tflite");
         if (!model.exists()) {
             try (InputStream src = getAssets().open("model.tflite"); FileOutputStream dst = new FileOutputStream(model)) {
@@ -192,6 +227,9 @@ public final class MainActivity extends Activity {
             interpreter.run(bytes, scores);
             int best = 0;
             for (int i = 1; i < LABELS.length; i++) if (scores[0][i] > scores[0][best]) best = i;
+            if (best / 3 != selectedPlant || scores[0][best] < 0.50f) {
+                return "Bu foto üçün vəziyyəti etibarlı müəyyən edə bilmədim. Bu sınaq yalnız seçilən üç bitki və məhdud vəziyyətlər üçündür; qulluq qərarını bu nəticəyə əsaslandırma.";
+            }
             String plant = best < 3 ? "Pothos / money plant" : best < 6 ? "Sansevieria / snake plant" : "Spider plant";
             String condition;
             switch (best) {
@@ -203,7 +241,7 @@ public final class MainActivity extends Activity {
                 case 6: condition = "Göbələk yarpaq ləkəsinə bənzər əlamət"; break;
                 default: condition = "Yarpaq ucunda quruma";
             }
-            return "Mümkün bitki: " + plant + "\nMümkün vəziyyət: " + condition
+            return "SINAQ, DİAQNOZ DEYİL\nSeçilmiş bitki: " + plant + "\nMümkün görünüş sinfi: " + condition
                 + "\nModel göstəricisi: " + String.format(Locale.US, "%.0f%%", scores[0][best] * 100)
                 + "\n\nBu göstərici diaqnozun dəqiqliyi deyil. Digər bitkilər və naməlum problemlər üçün model yanlış nəticə verə bilər. Kimyəvi müalicəyə başlamazdan əvvəl bitki növünü və səbəbi ayrıca yoxla.";
         }

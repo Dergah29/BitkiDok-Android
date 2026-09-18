@@ -10,7 +10,7 @@ from pathlib import Path
 from validate_inat_photos import validate
 
 
-def main(source, output):
+def main(source, output, max_per_species=90):
     report = json.loads(Path(source).read_text(encoding="utf-8"))
     rows = []
     for row in report["results"]:
@@ -24,12 +24,13 @@ def main(source, output):
     with tempfile.TemporaryDirectory() as temporary:
         input_path = Path(temporary) / "replacement_input.json"
         input_path.write_text(json.dumps({"results": rows}), encoding="utf-8")
-        validate(input_path, output, max_per_species=90, delay=0.3)
+        validate(input_path, output, max_per_species=max_per_species, delay=0.3)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("source", type=Path)
     parser.add_argument("output", type=Path)
+    parser.add_argument("--max-per-species", type=int, default=90)
     args = parser.parse_args()
-    main(args.source, args.output)
+    main(args.source, args.output, args.max_per_species)

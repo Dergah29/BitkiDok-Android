@@ -1,0 +1,26 @@
+name: Review replacement plant photos
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/make_replacement_review_sheets.py'
+      - '.github/workflows/review-replacement-photos.yml'
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'Pillow>=10,<12'
+      - run: python ml/make_replacement_review_sheets.py data/replacement_download_validation_11.json /tmp/replacement_review
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: replacement-review-sheets
+          path: /tmp/replacement_review
+          if-no-files-found: warn

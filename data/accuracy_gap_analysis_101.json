@@ -1,0 +1,20 @@
+{
+  "as_of_utc": "2026-09-18",
+  "source_run": "https://github.com/Dergah29/BitkiDok-Android/actions/runs/35232494487",
+  "classes": 101,
+  "validation_images": 489,
+  "top1": 0.3415133059024811,
+  "top3": 0.5132924335378323,
+  "per_class_source_limit": 25,
+  "classes_at_limit": 85,
+  "classes_below_limit": 16,
+  "critical_interpretation": "The 25-example collection cap is not proof 25 images are sufficient, and validation is same-source GBIF observations. No independent indoor smartphone benchmark exists. A 100% accuracy claim cannot be supported.",
+  "next_evidence_gates": [
+    "For each species, independently verify taxon labels and image rights; retain source attribution.",
+    "Collect additional diverse indoor potted smartphone images, including hard lookalike species and unknown plants, without reusing the same individual plant in train and test.",
+    "Group splits by plant individual, photographer and source site; review perceptual duplicates and repeated settings.",
+    "Train only on approved images; report top-1/top-3 and per-species confusion on an independent phone-photo test set; evaluate abstention rather than treating a softmax score as correctness.",
+    "Keep currently bundled 101-class model explicitly experimental until evidence meets release gates."
+  ],
+  "actions_taken": "Investigation only; no model weights or reported accuracy modified."
+}

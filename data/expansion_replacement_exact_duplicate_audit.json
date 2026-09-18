@@ -1,0 +1,171 @@
+{
+  "as_of_utc": "2026-09-18",
+  "scope": "Metadata-level audit of the downloaded expansion and replacement manifests; not an image quality or botanical label certification.",
+  "sources": [
+    "data/expansion_download_validation_24.json",
+    "data/replacement_download_validation_11.json"
+  ],
+  "expansion": {
+    "photos": 172,
+    "unique_photo_ids": 172,
+    "unique_medium_sha256": 172,
+    "unique_observation_ids": 172,
+    "cc0_metadata_count": 44,
+    "cc_by_metadata_count": 128
+  },
+  "replacement": {
+    "photos": 105,
+    "unique_photo_ids": 105,
+    "unique_medium_sha256": 105,
+    "unique_observation_ids": 105
+  },
+  "cross_batch": {
+    "shared_photo_ids": 0,
+    "shared_medium_sha256": 0,
+    "shared_observation_ids": 0
+  },
+  "species": [
+    {
+      "species": "Maranta leuconeura",
+      "decoded_medium_photos": 14,
+      "cc0_metadata_count": 7,
+      "cc_by_metadata_count": 7,
+      "largest_cc_by_attribution_count": 1,
+      "largest_cc_by_attribution": "(c) Óscar Sampedro, some rights reserved (CC BY)",
+      "cc0_photographer_opaque": true
+    },
+    {
+      "species": "Goeppertia roseopicta",
+      "decoded_medium_photos": 9,
+      "cc0_metadata_count": 4,
+      "cc_by_metadata_count": 5,
+      "largest_cc_by_attribution_count": 2,
+      "largest_cc_by_attribution": "(c) Kathy Richardson, some rights reserved (CC BY)",
+      "cc0_photographer_opaque": true
+    },
+    {
+      "species": "Goeppertia zebrina",
+      "decoded_medium_photos": 20,
+      "cc0_metadata_count": 5,
+      "cc_by_metadata_count": 15,
+      "largest_cc_by_attribution_count": 2,
+      "largest_cc_by_attribution": "(c) Cricket Raspet, some rights reserved (CC BY)",
+      "cc0_photographer_opaque": true
+    },
+    {
+      "species": "Ctenanthe burle-marxii",
+      "decoded_medium_photos": 1,
+      "cc0_metadata_count": 0,
+      "cc_by_metadata_count": 1,
+      "largest_cc_by_attribution_count": 1,
+      "largest_cc_by_attribution": "(c) Doreen, some rights reserved (CC BY)",
+      "cc0_photographer_opaque": true
+    },
+    {
+      "species": "Ctenanthe lubbersiana",
+      "decoded_medium_photos": 1,
+      "cc0_metadata_count": 1,
+      "cc_by_metadata_count": 0,
+      "largest_cc_by_attribution_count": 0,
+      "largest_cc_by_attribution": null,
+      "cc0_photographer_opaque": true
+    },
+    {
+      "species": "Nephrolepis exaltata",
+      "decoded_medium_photos": 20,
+      "cc0_metadata_count": 3,
+      "cc_by_metadata_count": 17,
+      "largest_cc_by_attribution_count": 4,
+      "largest_cc_by_attribution": "(c) Kevin Faccenda, some rights reserved (CC BY)",
+      "cc0_photographer_opaque": true
+    },
+    {
+      "species": "Asplenium nidus",
+      "decoded_medium_photos": 20,
+      "cc0_metadata_count": 5,
+      "cc_by_metadata_count": 15,
+      "largest_cc_by_attribution_count": 5,
+      "largest_cc_by_attribution": "(c) Kevin Faccenda, some rights reserved (CC BY)",
+      "cc0_photographer_opaque": true
+    },
+    {
+      "species": "Platycerium bifurcatum",
+      "decoded_medium_photos": 20,
+      "cc0_metadata_count": 10,
+      "cc_by_metadata_count": 10,
+      "largest_cc_by_attribution_count": 4,
+      "largest_cc_by_attribution": "(c) John Barkla, some rights reserved (CC BY)",
+      "cc0_photographer_opaque": true
+    },
+    {
+      "species": "Davallia fejeensis",
+      "decoded_medium_photos": 20,
+      "cc0_metadata_count": 1,
+      "cc_by_metadata_count": 19,
+      "largest_cc_by_attribution_count": 16,
+      "largest_cc_by_attribution": "(c) Kevin Faccenda, some rights reserved (CC BY)",
+      "cc0_photographer_opaque": true
+    },
+    {
+      "species": "Phlebodium aureum",
+      "decoded_medium_photos": 20,
+      "cc0_metadata_count": 7,
+      "cc_by_metadata_count": 13,
+      "largest_cc_by_attribution_count": 2,
+      "largest_cc_by_attribution": "(c) William Harmon, some rights reserved (CC BY)",
+      "cc0_photographer_opaque": true
+    },
+    {
+      "species": "Alocasia odora",
+      "decoded_medium_photos": 20,
+      "cc0_metadata_count": 1,
+      "cc_by_metadata_count": 19,
+      "largest_cc_by_attribution_count": 4,
+      "largest_cc_by_attribution": "(c) 謝麗霦, some rights reserved (CC BY)",
+      "cc0_photographer_opaque": true
+    },
+    {
+      "species": "Monstera standleyana",
+      "decoded_medium_photos": 3,
+      "cc0_metadata_count": 0,
+      "cc_by_metadata_count": 3,
+      "largest_cc_by_attribution_count": 1,
+      "largest_cc_by_attribution": "(c) Eric Knight, some rights reserved (CC BY)",
+      "cc0_photographer_opaque": true
+    },
+    {
+      "species": "Anthurium warocqueanum",
+      "decoded_medium_photos": 1,
+      "cc0_metadata_count": 0,
+      "cc_by_metadata_count": 1,
+      "largest_cc_by_attribution_count": 1,
+      "largest_cc_by_attribution": "(c) Daniel Mesa, some rights reserved (CC BY)",
+      "cc0_photographer_opaque": true
+    },
+    {
+      "species": "Peperomia ferreyrae",
+      "decoded_medium_photos": 2,
+      "cc0_metadata_count": 0,
+      "cc_by_metadata_count": 2,
+      "largest_cc_by_attribution_count": 1,
+      "largest_cc_by_attribution": "(c) Connor Connolly-Moyls, some rights reserved (CC BY)",
+      "cc0_photographer_opaque": true
+    },
+    {
+      "species": "Begonia pavonina",
+      "decoded_medium_photos": 1,
+      "cc0_metadata_count": 0,
+      "cc_by_metadata_count": 1,
+      "largest_cc_by_attribution_count": 1,
+      "largest_cc_by_attribution": "(c) Ooi Qie, some rights reserved (CC BY)",
+      "cc0_photographer_opaque": true
+    }
+  ],
+  "limitations": [
+    "CC0 photo 'photographer' strings are 'no rights reserved', not photographer identities. Do not count them as one photographer or infer independent authors.",
+    "CC-BY attribution text is not a stable account or individual-plant identifier; multiple photos by same author can also be independent individuals, and different authors can depict same plant.",
+    "Zero exact photo ID / medium-byte SHA-256 overlap only between these two batches; no perceptual duplicate or cross-source GBIF comparison was performed here.",
+    "Licenses are recorded metadata from prior collection, not reverified against each live photo record at training time; CC-BY requires attribution.",
+    "Botanical label, potted indoor relevance and independent phone-photo accuracy not verified. No photo is approved for training."
+  ]
+}

@@ -1,0 +1,25 @@
+name: Audit houseplant expansion taxa
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ml/audit_expansion_taxa.py'
+      - '.github/workflows/audit-expansion-taxa.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python ml/audit_expansion_taxa.py data/houseplants_200.json data/catalog_taxonomy_audit_200.json data/replacement_taxa_candidates_11.json /tmp/expansion_taxa.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: expansion-taxa-audit
+          path: /tmp/expansion_taxa.json
+          if-no-files-found: warn

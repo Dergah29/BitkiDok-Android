@@ -1,0 +1,38 @@
+{
+  "audit_date": "2026-09-21",
+  "source_dataset": {
+    "name": "Houseplant Disease Dataset",
+    "version": 2,
+    "url": "https://data.mendeley.com/datasets/7wbstnfpjy/2",
+    "declared_license": "CC BY 4.0"
+  },
+  "workflow": {
+    "run_id": 35320111727,
+    "url": "https://github.com/Dergah29/BitkiDok-Android/actions/runs/35320111727",
+    "artifact_name": "health-image-leakage-audit"
+  },
+  "result": {
+    "decoded_images": 787,
+    "label_classes": 9,
+    "plant_species": 3,
+    "exact_duplicate_pairs": 56,
+    "unique_files_in_exact_duplicate_pairs": 40,
+    "exact_duplicate_pairs_with_conflicting_labels": 0,
+    "near_visual_candidate_pairs_same_label_dhash_lte_2": 20,
+    "unique_files_in_near_visual_candidate_pairs": 29
+  },
+  "interpretation": [
+    "The raw archive contains proven byte-identical duplicates.",
+    "Random image-level train/validation splitting can place identical files on both sides and inflate validation accuracy.",
+    "dHash matches are candidates, not proof of duplicate biological specimens; they require visual review.",
+    "The previous 92.99% same-source validation result must not be treated as independent phone-photo performance."
+  ],
+  "required_next_steps": [
+    "Collapse exact duplicate groups before splitting.",
+    "Group related frames by plant specimen/capture sequence where possible.",
+    "Split by specimen or capture group, not by individual file.",
+    "Keep an independent indoor phone-photo test set.",
+    "Retrain and report top-1 and confusion matrix only after the leakage-safe split."
+  ],
+  "training_status": "No new disease/condition class or photo was accepted by this audit."
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Re-check current iNaturalist observation taxon and per-photo licenses.
+"""Re-check current iNaturalist observation taxon and per-photo licenses (live audit).
 
 Reads only already-downloaded candidate manifests. This audit does not approve
 botanical identity or image quality and does not download images.

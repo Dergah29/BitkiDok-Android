@@ -1,0 +1,165 @@
+{
+  "as_of_utc": "2026-09-21",
+  "scope": "Training-readiness decision for the ten candidate species with at least 12 decoded iNaturalist observation photos.",
+  "evidence": [
+    "data/expansion_download_validation_24.json",
+    "data/replacement_download_validation_11.json",
+    "data/expansion_replacement_exact_duplicate_audit.json",
+    "data/expansion_visual_review_notes.json",
+    "data/replacement_visual_review_notes.json"
+  ],
+  "global_findings": {
+    "candidate_species": 10,
+    "candidate_photos": 271,
+    "exact_photo_id_or_sha256_duplicates_between_expansion_and_replacement_batches": 0,
+    "accepted_for_training": 0,
+    "model_species_classes_after_audit": 101,
+    "reasons_not_accepted": [
+      "No complete botanist-level visual label review.",
+      "Most reviewed expansion examples are outdoor/wild rather than representative indoor phone photos.",
+      "No specimen-group split proving that the same plant is absent from training and validation.",
+      "No independent indoor phone-photo test set."
+    ]
+  },
+  "species": [
+    {
+      "name": "Maranta leuconeura",
+      "photos": 14,
+      "unique_attribution_strings": 8,
+      "license_metadata": {
+        "cc0": 7,
+        "cc_by": 7
+      },
+      "decision": "hold",
+      "notes": [
+        "Outdoor/groundcover examples dominate reviewed sample."
+      ]
+    },
+    {
+      "name": "Goeppertia zebrina",
+      "photos": 20,
+      "unique_attribution_strings": 13,
+      "license_metadata": {
+        "cc0": 5,
+        "cc_by": 15
+      },
+      "decision": "hold",
+      "notes": [
+        "Outdoor garden/ground observations dominate reviewed sample."
+      ]
+    },
+    {
+      "name": "Nephrolepis exaltata",
+      "photos": 20,
+      "unique_attribution_strings": 15,
+      "license_metadata": {
+        "cc0": 3,
+        "cc_by": 17
+      },
+      "decision": "hold",
+      "notes": [
+        "Forest/tree/outdoor examples dominate; only limited apparent indoor coverage."
+      ]
+    },
+    {
+      "name": "Asplenium nidus",
+      "photos": 20,
+      "unique_attribution_strings": 11,
+      "license_metadata": {
+        "cc0": 5,
+        "cc_by": 15
+      },
+      "decision": "hold",
+      "notes": [
+        "Epiphytic forest/tree and outdoor garden subjects dominate."
+      ]
+    },
+    {
+      "name": "Platycerium bifurcatum",
+      "photos": 20,
+      "unique_attribution_strings": 8,
+      "license_metadata": {
+        "cc0": 10,
+        "cc_by": 10
+      },
+      "decision": "hold",
+      "notes": [
+        "Tree-mounted outdoor subjects dominate; indoor domain absent from reviewed sample."
+      ]
+    },
+    {
+      "name": "Davallia fejeensis",
+      "photos": 20,
+      "unique_attribution_strings": 4,
+      "license_metadata": {
+        "cc0": 1,
+        "cc_by": 19
+      },
+      "decision": "hold",
+      "notes": [
+        "16 of 20 photos share one CC BY attribution string; high author/specimen leakage risk."
+      ]
+    },
+    {
+      "name": "Phlebodium aureum",
+      "photos": 20,
+      "unique_attribution_strings": 12,
+      "license_metadata": {
+        "cc0": 7,
+        "cc_by": 13
+      },
+      "decision": "hold",
+      "notes": [
+        "Independent indoor test and specimen grouping remain absent."
+      ]
+    },
+    {
+      "name": "Alocasia odora",
+      "photos": 20,
+      "unique_attribution_strings": 13,
+      "license_metadata": {
+        "cc0": 1,
+        "cc_by": 19
+      },
+      "decision": "hold",
+      "notes": [
+        "Independent indoor test and full botanical review remain absent."
+      ]
+    },
+    {
+      "name": "Dischidia nummularia",
+      "photos": 57,
+      "unique_attribution_strings": 28,
+      "license_metadata": {
+        "cc0": 6,
+        "cc_by": 51
+      },
+      "decision": "hold",
+      "notes": [
+        "Reviewed examples are mostly wild/tree-mounted and do not establish indoor phone performance."
+      ]
+    },
+    {
+      "name": "Monstera pinnatipartita",
+      "photos": 40,
+      "unique_attribution_strings": 18,
+      "license_metadata": {
+        "cc0": 2,
+        "cc_by": 38
+      },
+      "decision": "hold",
+      "notes": [
+        "19 of 40 photos share one CC BY attribution string; author/specimen leakage risk."
+      ]
+    }
+  ],
+  "next_acceptance_gate": [
+    "Confirm current per-photo CC0/CC BY status.",
+    "Review every image for the intended botanical species.",
+    "Cluster near-duplicates and capture sequences.",
+    "Split by photographer and plant specimen.",
+    "Add independent indoor phone photos not used in training.",
+    "Train and report top-1/top-3 plus per-class confusion."
+  ],
+  "claim_control": "These ten species are candidates only and do not increase the production model beyond 101 classes."
+}

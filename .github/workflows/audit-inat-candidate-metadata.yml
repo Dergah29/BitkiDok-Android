@@ -1,0 +1,26 @@
+name: Audit iNaturalist candidate metadata
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "ml/audit_inat_candidate_metadata.py"
+      - "data/expansion_download_validation_24.json"
+      - "data/replacement_download_validation_11.json"
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Re-check live taxon and per-photo license metadata
+        run: python ml/audit_inat_candidate_metadata.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: inat-live-license-taxon-audit
+          path: data/inat_live_license_taxon_audit.json
+          if-no-files-found: error
